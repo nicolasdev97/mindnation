@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="50" cy="50" r="50" fill="#00A3B4"/>
+    
+    <!-- Person Icon -->
+    <circle cx="50" cy="40" r="20" fill="white"/>
+    <path d="M30 80 C30 65, 70 65, 70 80" fill="white"/>
+</svg> 

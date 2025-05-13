@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MindNation - Digital mental health platform for modern workplaces. Get 24/7 access to mental health professionals and resources."
+    />
+    <meta name="theme-color" content="#00A3B4" />
+    <title>MindNation - Digital Mental Health Platform</title>
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/images/mindnation-logo.svg" as="image" />
+    <link rel="preload" href="assets/images/dashboard-mockup.svg" as="image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .testimonial-author img {
+        margin-right: 16px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+      }
+      .testimonial-author div {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navegación principal -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="/" class="logo" aria-label="MindNation Home">
+          <img
+            src="assets/images/mindnation-logo.png"
+            alt="MindNation Logo"
+            width="160"
+            height="40"
+            fetchpriority="high"
+          />
+        </a>
+        <button
+          class="mobile-menu-btn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          data-en-aria-label="Toggle menu"
+          data-es-aria-label="Alternar menú"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a
+            href="https://calendly.com/matt-mindnation/30min"
+            class="cta-btn"
+            data-en="Schedule Demo"
+            data-es="Agendar Demo"
+            data-fr="Planifier une démo"
+            >Agendar Demo</a
+          >
+          <select
+            class="lang-switch"
+            aria-label="Seleccionar idioma"
+            style="
+              margin-left: 1rem;
+              padding: 0.5rem 1.5rem;
+              border-radius: 20px;
+              font-size: 1rem;
+            "
+          >
+            <option value="es" data-flag="assets/images/spanish.jpg">
+              🇪🇸 Español
+            </option>
+            <option value="en" data-flag="assets/images/english.jpg">
+              🇬🇧 English
+            </option>
+            <option value="fr" data-flag="assets/images/france.png">
+              🇫🇷 Français
+            </option>
+          </select>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Héroe (Hero) -->
+    <section class="hero fade-in-section" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-container">
+          <div class="hero-content">
+            <span
+              class="hero-badge"
+              data-en="Trusted by 500+ Companies"
+              data-es="Utilizado por más de 500 empresas"
+              data-fr="Utilisé par plus de 500 entreprises"
+              >Utilizado por más de 500 empresas</span
+            >
+            <h1
+              id="hero-heading"
+              data-en="Transform Your Workplace with Mental Health Support"
+              data-es="Transforma tu Lugar de Trabajo con Apoyo en Salud Mental"
+              data-fr="Transformez votre lieu de travail avec l'aide de la santé mentale"
+            >
+              Transforma tu Lugar de Trabajo con Apoyo en Salud Mental
+            </h1>
+            <p
+              class="hero-subtitle"
+              data-en="Empower your team with 24/7 access to mental health professionals. Reduce burnout, boost productivity, and create a healthier workplace culture."
+              data-es="Potencia a tu equipo con acceso 24/7 a profesionales de salud mental. Reduce el agotamiento, aumenta la productividad y crea una cultura laboral más saludable."
+              data-fr="Donnez à votre équipe accès 24/7 à des professionnels de la santé mentale. Réduisez l'épuisement, augmentez la productivité et créez une culture de travail plus saine."
+            >
+              Potencia a tu equipo con acceso 24/7 a profesionales de salud
+              mental. Reduce el agotamiento, aumenta la productividad y crea una
+              cultura laboral más saludable.
+            </p>
+            <div class="cta-group">
+              <a
+                href="https://calendly.com/matt-mindnation/30min"
+                class="cta-btn"
+                data-en="Schedule a Demo"
+                data-es="Agendar una Demo"
+                data-fr="Planifier une démo"
+                >Agendar una Demo</a
+              >
+              <p
+                class="cta-subtext"
+                style="
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-top: 1rem;
+                "
+              >
+                <span
+                  ><i class="fas fa-clock"></i>
+                  <span
+                    data-en="15-minute setup"
+                    data-es="Configuración en 15 minutos"
+                    data-fr="Configuration en 15 minutes"
+                    >Configuración en 15 minutos</span
+                  ></span
+                >
+                <span>•</span>
+                <span
+                  ><i class="fas fa-shield-alt"></i>
+                  <span
+                    data-en="Secure & Private"
+                    data-es="Seguro y Privado"
+                    data-fr="Sécurité et privé"
+                    >Seguro y Privado</span
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">75%</span>
+                <span
+                  class="stat-label"
+                  data-en="Reduction in Burnout"
+                  data-es="Reducción en Agotamiento"
+                  data-fr="Réduction de l'épuisement"
+                  >Reducción en Agotamiento</span
+                >
+              </div>
+              <div class="stat">
+                <span class="stat-number">3x</span>
+                <span
+                  class="stat-label"
+                  data-en="Higher Engagement"
+                  data-es="Mayor Compromiso"
+                  data-fr="Mieux engager"
+                  >Mayor Compromiso</span
+                >
+              </div>
+              <div class="stat">
+                <span class="stat-number">4x</span>
+                <span
+                  class="stat-label"
+                  data-en="Employee Retention Likelihood"
+                  data-es="Probabilidad de Retención de empleados"
+                  data-fr="Probabilité de rétention des employés"
+                  >Probabilidad de Retención de empleados</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assets/images/admin.png"
+              alt="MindNation Admin"
+              width="200"
+              loading="eager"
+              fetchpriority="high"
+              style="
+                object-fit: contain;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+              "
+            />
+            <div class="hero-image-badge">
+              <span class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </span>
+              <span
+                data-en="Rated 4.9/5 by our users"
+                data-es="Calificado 4.9/5 por nuestros usuarios"
+                data-fr="Noté 4,9/5 par nos utilisateurs"
+                >Calificado 4.9/5 por nuestros usuarios</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Slider de Producto (Showcase) -->
+    <section
+      class="showcase fade-in-section"
+      aria-labelledby="showcase-heading"
+    >
+      <div class="container">
+        <h2
+          id="showcase-heading"
+          class="showcase-title"
+          data-en="Experience MindNation"
+          data-es="Experimenta MindNation"
+          data-fr="Expérience MindNation"
+        >
+          Experimenta MindNation
+        </h2>
+        <div class="showcase-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-slide active">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img
+                      src="assets/images/dashboard.png"
+                      alt="MindNation Dashboard Interface"
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3
+                      data-en="Powerful Dashboard"
+                      data-es="Panel de Control Potente"
+                      data-fr="Tableau de bord puissant"
+                    >
+                      Panel de Control Potente
+                    </h3>
+                    <p
+                      data-en="Monitor and manage your team's mental health with our intuitive dashboard. Track engagement, measure impact, and make data-driven decisions."
+                      data-es="Monitorea y gestiona la salud mental de tu equipo con nuestro panel intuitivo. Rastrea el compromiso, mide el impacto y toma decisiones basadas en datos."
+                      data-fr="Surveillez et gérez la santé mentale de votre équipe avec notre tableau de bord intuitif. Suivez le compromis, mesurez l'impact et prenez des décisions basées sur les données."
+                    >
+                      Monitorea y gestiona la salud mental de tu equipo con
+                      nuestro panel intuitivo. Rastrea el compromiso, mide el
+                      impacto y toma decisiones basadas en datos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img
+                      src="assets/images/ecosistema.png"
+                      alt="MindNation Mental Health Ecosystem"
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3
+                      data-en="Full Mental Health Ecosystem"
+                      data-es="Ecosistema Completo de Salud Mental"
+                      data-fr="Système complet de santé mentale"
+                    >
+                      Ecosistema Completo de Salud Mental
+                    </h3>
+                    <p
+                      data-en="A comprehensive mental health ecosystem at your fingertips, providing all the tools and resources your team needs for optimal well-being."
+                      data-es="Un ecosistema completo de salud mental al alcance de tu mano, proporcionando todas las herramientas y recursos que tu equipo necesita para un bienestar óptimo."
+                      data-fr="Un système complet de santé mentale à portée de main, offrant tous les outils et ressources dont votre équipe a besoin pour un bien-être optimal."
+                    >
+                      Un ecosistema completo de salud mental al alcance de tu
+                      mano, proporcionando todas las herramientas y recursos que
+                      tu equipo necesita para un bienestar óptimo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img
+                      src="assets/images/app.png"
+                      alt="MindNation Mobile App Interface"
+                      width="400"
+                      height="800"
+                      loading="lazy"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div class="slide-info">
+                    <h3
+                      data-en="Mobile-First Experience"
+                      data-es="Experiencia Móvil Primero"
+                      data-fr="Expérience mobile première"
+                    >
+                      Experiencia Móvil Primero
+                    </h3>
+                    <p
+                      data-en="Access mental health support anytime, anywhere with our user-friendly mobile app. Connect with professionals and access resources on the go."
+                      data-es="Accede al apoyo de salud mental en cualquier momento y lugar con nuestra aplicación móvil fácil de usar. Conéctate con profesionales y accede a recursos sobre la marcha."
+                      data-fr="Accédez à l'aide de la santé mentale en tout moment et en tout lieu avec notre application mobile facile à utiliser. Connectez-vous avec des professionnels et accédez aux ressources en cours de route."
+                    >
+                      Accede al apoyo de salud mental en cualquier momento y
+                      lugar con nuestra aplicación móvil fácil de usar.
+                      Conéctate con profesionales y accede a recursos sobre la
+                      marcha.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-slide">
+                <div class="slide-content">
+                  <div class="slide-video">
+                    <div class="video-wrapper">
+                      <iframe
+                        src="https://www.youtube.com/embed/CkX_V2I5nA0"
+                        title="MindNation Platform Overview"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        data-en-title="MindNation Platform Overview"
+                        data-es-title="Descripción General de la Plataforma MindNation"
+                        data-fr-title="Présentation générale de la plateforme MindNation"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="slide-info">
+                    <h3
+                      data-en="See It in Action"
+                      data-es="Véalo en Acción"
+                      data-fr="Le voir en action"
+                    >
+                      Véalo en Acción
+                    </h3>
+                    <p
+                      data-en="Watch how MindNation transforms workplace mental health support and creates a more engaged, productive workforce."
+                      data-es="Vea cómo MindNation transforma el apoyo a la salud mental en el lugar de trabajo y crea una fuerza laboral más comprometida y productiva."
+                      data-fr="Regardez comment MindNation transforme l'aide à la santé mentale au sein de l'entreprise et crée une force de travail plus engagée et productive."
+                    >
+                      Vea cómo MindNation transforma el apoyo a la salud mental
+                      en el lugar de trabajo y crea una fuerza laboral más
+                      comprometida y productiva.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button
+              class="slider-prev"
+              aria-label="Previous slide"
+              data-en-aria-label="Previous slide"
+              data-es-aria-label="Diapositiva anterior"
+              data-fr-aria-label="Diapositive précédente"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+              <button
+                class="slider-dot active"
+                aria-label="Go to slide 1"
+                data-en-aria-label="Go to slide 1"
+                data-es-aria-label="Ir a diapositiva 1"
+                data-fr-aria-label="Aller à la diapositive 1"
+              ></button>
+              <button
+                class="slider-dot"
+                aria-label="Go to slide 2"
+                data-en-aria-label="Go to slide 2"
+                data-es-aria-label="Ir a diapositiva 2"
+                data-fr-aria-label="Aller à la diapositive 2"
+              ></button>
+              <button
+                class="slider-dot"
+                aria-label="Go to slide 3"
+                data-en-aria-label="Go to slide 3"
+                data-es-aria-label="Ir a diapositiva 3"
+                data-fr-aria-label="Aller à la diapositive 3"
+              ></button>
+              <button
+                class="slider-dot"
+                aria-label="Go to slide 4"
+                data-en-aria-label="Go to slide 4"
+                data-es-aria-label="Ir a diapositiva 4"
+                data-fr-aria-label="Aller à la diapositive 4"
+              ></button>
+            </div>
+            <button
+              class="slider-next"
+              aria-label="Next slide"
+              data-en-aria-label="Next slide"
+              data-es-aria-label="Siguiente diapositiva"
+              data-fr-aria-label="Diapositive suivante"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Problema (Problem) -->
+    <section class="problem fade-in-section" aria-labelledby="problem-heading">
+      <div class="container">
+        <h2
+          id="problem-heading"
+          data-en="The Mental Health Challenge in Modern Workplaces"
+          data-es="El Desafío de la Salud Mental en los Lugares de Trabajo Modernos"
+          data-fr="Le défi de la santé mentale dans les lieux de travail modernes"
+        >
+          El Desafío de la Salud Mental en los Lugares de Trabajo Modernos
+        </h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">75%</div>
+            <p
+              data-en="of employees report experiencing burnout"
+              data-es="de empleados reportan experimentar agotamiento"
+              data-fr="75 % des employés signalent avoir éprouvé l'épuisement"
+            >
+              de empleados reportan experimentar agotamiento
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">$1T</div>
+            <p
+              data-en="annual cost of workplace stress globally"
+              data-es="costo anual del estrés laboral a nivel global"
+              data-fr="coût annuel de stress au travail à l'échelle mondiale"
+            >
+              costo anual del estrés laboral a nivel global
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3x</div>
+            <p
+              data-en="increase in mental health support requests"
+              data-es="aumento en solicitudes de apoyo en salud mental"
+              data-fr="augmentation des demandes d'aide en santé mentale"
+            >
+              aumento en solicitudes de apoyo en salud mental
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50%</div>
+            <p
+              data-en="of people with mental health conditions in Latin America do not receive any treatment"
+              data-es="del personal con condiciones de salud mental en América Latina no recibe tratamiento"
+              data-fr="des personnes atteintes de troubles mentaux en Amérique latine ne reçoivent aucun traitement"
+            >
+              del personal con condiciones de salud mental en América Latina no
+              recibe tratamiento
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">Top 5</div>
+            <p
+              data-en="Depression and anxiety disorders are among the top 5 causes of productivity loss in Latin America"
+              data-es="La depresión y los trastornos de ansiedad están entre las 5 principales causas de pérdida de productividad en América Latina"
+              data-fr="La dépression et les troubles anxieux figurent parmi les 5 principales causes de perte de productivité en Amérique latine"
+            >
+              La depresión y los trastornos de ansiedad están entre las 5
+              principales causas de pérdida de productividad en América Latina
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">30–40%</div>
+            <p
+              data-en="increase in stress-related sick leave since the pandemic"
+              data-es="de aumento en bajas laborales por estrés desde la pandemia"
+              data-fr="d'augmentation des congés maladie liés au stress depuis la pandémie"
+            >
+              de aumento en bajas laborales por estrés desde la pandemia
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA after Problem section -->
+    <div class="container" style="text-align: center; margin: 2rem 0">
+      <a
+        href="https://calendly.com/matt-mindnation/30min"
+        class="cta-btn cta-highlight"
+        data-en="Book Your Demo"
+        data-es="Reserva tu demo"
+        data-fr="Réservez votre démo"
+        >Reserva tu demo</a
+      >
+    </div>
+
+    <!-- Sección de Solución (Solution) -->
+    <section
+      class="solution fade-in-section"
+      aria-labelledby="solution-heading"
+    >
+      <div class="container">
+        <h2
+          id="solution-heading"
+          data-en="Comprehensive Mental Health Support"
+          data-es="Apoyo Integral en Salud Mental"
+          data-fr="Aide complète en santé mentale"
+        >
+          Apoyo Integral en Salud Mental
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3
+              data-en="24/7 Professional Support"
+              data-es="Apoyo Profesional 24/7"
+              data-fr="Aide professionnelle 24/7"
+            >
+              Apoyo Profesional 24/7
+            </h3>
+            <p
+              data-en="Access to licensed mental health professionals anytime, anywhere."
+              data-es="Acceso a profesionales de salud mental licenciados en cualquier momento y lugar."
+              data-fr="Accès à des professionnels de santé mentale titulés en tout moment et en tout lieu."
+            >
+              Acceso a profesionales de salud mental licenciados en cualquier
+              momento y lugar.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3
+              data-en="Mobile-First Platform"
+              data-es="Plataforma Móvil Primero"
+              data-fr="Plateforme mobile première"
+            >
+              Plataforma Móvil Primero
+            </h3>
+            <p
+              data-en="Easy access through our user-friendly mobile app and web platform."
+              data-es="Fácil acceso a través de nuestra aplicación móvil y plataforma web intuitiva."
+              data-fr="Accès facile via notre application mobile et plateforme web intuitive."
+            >
+              Fácil acceso a través de nuestra aplicación móvil y plataforma web
+              intuitiva.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h3
+              data-en="Data-Driven Insights"
+              data-es="Información Basada en Datos"
+              data-fr="Informations basées sur les données"
+            >
+              Información Basada en Datos
+            </h3>
+            <p
+              data-en="Track and improve workplace mental health with actionable analytics."
+              data-es="Monitorea y mejora la salud mental en el lugar de trabajo con análisis accionables."
+              data-fr="Surveillez et améliorez la santé mentale au sein de l'entreprise avec des analyses actionnables."
+            >
+              Monitorea y mejora la salud mental en el lugar de trabajo con
+              análisis accionables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA after Solution section -->
+    <div class="container" style="text-align: center; margin: 2rem 0">
+      <a
+        href="https://calendly.com/matt-mindnation/30min"
+        class="cta-btn cta-highlight"
+        data-en="Get Started Now"
+        data-es="Comienza ahora"
+        data-fr="Commencez maintenant"
+        >Comienza ahora</a
+      >
+    </div>
+
+    <!-- Sección de Prueba Social (Empresas que confían) -->
+    <section
+      class="social-proof fade-in-section"
+      aria-labelledby="social-proof-heading"
+    >
+      <div class="container">
+        <h2
+          id="social-proof-heading"
+          data-en="Trusted by Leading Companies"
+          data-es="Confiado por Empresas Líderes"
+          data-fr="Confiance par des entreprises leaders"
+        >
+          Confiado por Empresas Líderes
+        </h2>
+        <div
+          class="logos-grid"
+          aria-label="Company logos"
+          data-en-aria-label="Company logos"
+          data-es-aria-label="Logos de empresas"
+          data-fr-aria-label="Logos d'entreprises"
+        >
+          <img
+            src="assets/images/H&M-Logo.svg.png"
+            alt="H&M"
+            loading="lazy"
+            width="120"
+            height="40"
+          />
+          <img
+            src="assets/images/swo.png"
+            alt="SoftwareOne"
+            loading="lazy"
+            width="120"
+            height="40"
+          />
+          <img
+            src="assets/images/boldr.png"
+            alt="Boldr"
+            loading="lazy"
+            width="120"
+            height="40"
+          />
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p
+              data-en="MindNation has transformed how we support our employees' mental health. The platform is intuitive, and the impact on our workplace culture has been remarkable."
+              data-es="MindNation ha transformado cómo apoyamos la salud mental de nuestros empleados. La plataforma es intuitiva y el impacto en nuestra cultura laboral ha sido notable."
+              data-fr="MindNation a transformé la manière dont nous soutenons la santé mentale de nos employés. La plateforme est intuitive et l'impact sur notre culture au travail a été remarquable."
+            >
+              MindNation ha transformado cómo apoyamos la salud mental de
+              nuestros empleados. La plataforma es intuitiva y el impacto en
+              nuestra cultura laboral ha sido notable.
+            </p>
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="assets/images/Sarah.png"
+              alt="Sarah Johnson"
+              width="60"
+              height="60"
+              loading="lazy"
+              style="object-fit: cover; border-radius: 50%; display: block"
+            />
+            <div>
+              <h4>Sarah Johnson</h4>
+              <p
+                data-en="People & Culture Manager"
+                data-es="Gerente de Personas y Cultura"
+                data-fr="Directeur des ressources humaines et culturelles"
+              >
+                Gerente de Personas y Cultura
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- New testimonials -->
+        <div class="testimonial-card">
+          <blockquote>
+            <p
+              data-en="The support from MindNation's experts has been invaluable. I feel more motivated and less stressed at work."
+              data-es="El apoyo de los expertos de MindNation ha sido invaluable. Me siento más motivado y menos estresado en el trabajo."
+              data-fr="L'aide des experts de MindNation a été précieuse. Je me sens plus motivé et moins stressé au travail."
+            >
+              El apoyo de los expertos de MindNation ha sido invaluable. Me
+              siento más motivado y menos estresado en el trabajo.
+            </p>
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="assets/images/carlos.png"
+              alt="Carlos Martínez"
+              width="60"
+              height="60"
+              loading="lazy"
+              style="object-fit: cover; border-radius: 50%; display: block"
+            />
+            <div>
+              <h4>Carlos Martínez</h4>
+              <p
+                data-en="HR Business Partner (HRBP)"
+                data-es="Socio de Negocios de RRHH (HRBP)"
+                data-fr="Partenaire commercial de ressources humaines (HRBP)"
+              >
+                Socio de Negocios de RRHH (HRBP)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p
+              data-en="I love how easy it is to schedule sessions and get help whenever I need it. Highly recommended!"
+              data-es="Me encanta lo fácil que es agendar sesiones y recibir ayuda cuando la necesito. ¡Muy recomendable!"
+              data-fr="J'aime comment c'est facile d'organiser des sessions et d'obtenir de l'aide quand je le souhaite. Très recommandé !"
+            >
+              Me encanta lo fácil que es agendar sesiones y recibir ayuda cuando
+              la necesito. ¡Muy recomendable!
+            </p>
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="assets/images/anagomez.png"
+              alt="Ana Gómez"
+              width="60"
+              height="60"
+              loading="lazy"
+              style="object-fit: cover; border-radius: 50%; display: block"
+            />
+            <div>
+              <h4>Ana Gómez</h4>
+              <p
+                data-en="Talent Experience Lead"
+                data-es="Líder de Experiencia de Talento"
+                data-fr="Chef d'expérience talent"
+              >
+                Líder de Experiencia de Talento
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p
+              data-en="MindNation's platform is a game changer for our company. Our team's well-being has improved significantly."
+              data-es="La plataforma de MindNation ha cambiado las reglas del juego para nuestra empresa. El bienestar de nuestro equipo ha mejorado significativamente."
+              data-fr="La plateforme de MindNation a changé les règles du jeu pour notre entreprise. Le bien-être de notre équipe a beaucoup amélioré."
+            >
+              La plataforma de MindNation ha cambiado las reglas del juego para
+              nuestra empresa. El bienestar de nuestro equipo ha mejorado
+              significativamente.
+            </p>
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="assets/images/lucia.png"
+              alt="Lucía Fernández"
+              width="60"
+              height="60"
+              loading="lazy"
+              style="object-fit: cover; border-radius: 50%; display: block"
+            />
+            <div>
+              <h4>Lucía Fernández</h4>
+              <p
+                data-en="Organizational Development Specialist"
+                data-es="Especialista en Desarrollo Organizacional"
+                data-fr="Spécialiste en développement organisationnel"
+              >
+                Especialista en Desarrollo Organizacional
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA after Social Proof section -->
+    <div class="container" style="text-align: center; margin: 2rem 0">
+      <a
+        href="https://calendly.com/matt-mindnation/30min"
+        class="cta-btn cta-highlight"
+        data-en="Talk to an Expert"
+        data-es="Habla con un experto"
+        data-fr="Parlez à un expert"
+        >Habla con un experto</a
+      >
+    </div>
+
+    <!-- Sección de Comparación (Comparison) -->
+    <section
+      class="comparison fade-in-section"
+      aria-labelledby="comparison-heading"
+    >
+      <div class="container">
+        <h2
+          id="comparison-heading"
+          data-en="Why Choose MindNation?"
+          data-es="¿Por qué Elegir MindNation?"
+          data-fr="Pourquoi choisir MindNation ?"
+        >
+          ¿Por qué Elegir MindNation?
+        </h2>
+        <div
+          class="comparison-table"
+          role="region"
+          aria-label="Feature comparison"
+          data-en-aria-label="Feature comparison"
+          data-es-aria-label="Comparación de características"
+          data-fr-aria-label="Comparaison des caractéristiques"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th
+                  data-en="Feature"
+                  data-es="Característica"
+                  data-fr="Caractéristique"
+                >
+                  Característica
+                </th>
+                <th
+                  data-en="Traditional EAP"
+                  data-es="EAP Tradicional"
+                  data-fr="EAP traditionnel"
+                >
+                  EAP Tradicional
+                </th>
+                <th>MindNation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  data-en="24/7 Access"
+                  data-es="Acceso 24/7"
+                  data-fr="Accès 24/7"
+                >
+                  Acceso 24/7
+                </td>
+                <td data-en="Limited" data-es="Limitado" data-fr="Limité">
+                  Limitado
+                </td>
+                <td
+                  data-en="Yes, available 24/7/365 with live chat and virtual sessions"
+                  data-es="Sí, disponible 24/7/365 con chat en vivo y sesiones virtuales"
+                  data-fr="Oui, disponible 24/7/365 avec chat en direct et sessions virtuelles"
+                >
+                  Sí, disponible 24/7/365 con chat en vivo y sesiones virtuales
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="Mobile App"
+                  data-es="Aplicación Móvil"
+                  data-fr="Application mobile"
+                >
+                  Aplicación Móvil
+                </td>
+                <td data-en="No" data-es="No" data-fr="Non">No</td>
+                <td
+                  data-en="Yes, app available on Google Play and App Store"
+                  data-es="Sí, app disponible en Google Play y App Store"
+                  data-fr="Oui, application disponible sur Google Play et App Store"
+                >
+                  Sí, app disponible en Google Play y App Store
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="Data Analytics"
+                  data-es="Análisis de Datos"
+                  data-fr="Analyse des données"
+                >
+                  Análisis de Datos
+                </td>
+                <td
+                  data-en="Basic or non-existent"
+                  data-es="Básico o inexistente"
+                  data-fr="Basique ou inexistant"
+                >
+                  Básico o inexistente
+                </td>
+                <td
+                  data-en="Real-time dashboard with insights on team well-being"
+                  data-es="Dashboard en tiempo real con insights sobre el bienestar del equipo"
+                  data-fr="Tableau de bord en temps réel avec des informations sur le bien-être de l'équipe"
+                >
+                  Dashboard en tiempo real con insights sobre el bienestar del
+                  equipo
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="Diversity of Specialists"
+                  data-es="Diversidad de Especialistas"
+                  data-fr="Diversité des spécialistes"
+                >
+                  Diversidad de Especialistas
+                </td>
+                <td data-en="Limited" data-es="Limitada" data-fr="Limitée">
+                  Limitada
+                </td>
+                <td
+                  data-en="Psychologists, coaches, nutritionists and more, available globally"
+                  data-es="Psicólogos, coaches, nutricionistas y más, disponibles globalmente"
+                  data-fr="Psychologues, coachs, nutritionnistes et plus, disponibles mondialement"
+                >
+                  Psicólogos, coaches, nutricionistas y más, disponibles
+                  globalmente
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="Preventive Approach"
+                  data-es="Enfoque Preventivo"
+                  data-fr="Approche préventive"
+                >
+                  Enfoque Preventivo
+                </td>
+                <td data-en="Reactive" data-es="Reactivo" data-fr="Réactif">
+                  Reactivo
+                </td>
+                <td
+                  data-en="Proactive, with educational tools and prevention programs"
+                  data-es="Proactivo, con herramientas educativas y programas de prevención"
+                  data-fr="Proactif, avec des outils éducatifs et des programmes de prévention"
+                >
+                  Proactivo, con herramientas educativas y programas de
+                  prevención
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="User Experience"
+                  data-es="Experiencia del Usuario"
+                  data-fr="Expérience utilisateur"
+                >
+                  Experiencia del Usuario
+                </td>
+                <td data-en="Outdated" data-es="Anticuada" data-fr="Démodée">
+                  Anticuada
+                </td>
+                <td
+                  data-en="Digital, agile and intuitive, with self-guided resources"
+                  data-es="Digital, ágil e intuitiva, con recursos autoguiados"
+                  data-fr="Numérique, agile et intuitive, avec des ressources autoguidées"
+                >
+                  Digital, ágil e intuitiva, con recursos autoguiados
+                </td>
+              </tr>
+              <tr>
+                <td
+                  data-en="Available Languages"
+                  data-es="Idiomas Disponibles"
+                  data-fr="Langues disponibles"
+                >
+                  Idiomas Disponibles
+                </td>
+                <td data-en="Spanish" data-es="Español" data-fr="Espagnol">
+                  Español
+                </td>
+                <td
+                  data-en="Multilingual (includes English and more)"
+                  data-es="Multilingual (incluye inglés y más)"
+                  data-fr="Multilingue (inclut l'anglais et plus)"
+                >
+                  Multilingual (incluye inglés y más)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+    <section class="faq fade-in-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2
+            class="section-title"
+            data-en="Frequently Asked Questions"
+            data-es="Preguntas Frecuentes"
+            data-fr="Questions fréquentes"
+          >
+            Preguntas Frecuentes
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Find answers to the most common questions about our services"
+            data-es="Encuentra respuestas a las preguntas más comunes sobre nuestros servicios"
+            data-fr="Trouvez des réponses aux questions les plus fréquentes sur nos services"
+          >
+            Encuentra respuestas a las preguntas más comunes sobre nuestros
+            servicios
+          </p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3
+                data-en="What is MindNation?"
+                data-es="¿Qué es MindNation?"
+                data-fr="Qu'est-ce que MindNation ?"
+              >
+                ¿Qué es MindNation?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p
+                data-en="MindNation is a mental health platform that connects people with qualified mental health professionals. We offer therapy, coaching, and mental wellness resources."
+                data-es="MindNation es una plataforma de salud mental que conecta a las personas con profesionales calificados en salud mental. Ofrecemos servicios de terapia, coaching y recursos de bienestar mental."
+                data-fr="MindNation est une plateforme de santé mentale qui connecte les personnes avec des professionnels qualifiés en santé mentale. Nous offrons des services de thérapie, de coaching et des ressources pour le bien-être mental."
+              >
+                MindNation es una plataforma de salud mental que conecta a las
+                personas con profesionales calificados en salud mental.
+                Ofrecemos servicios de terapia, coaching y recursos de bienestar
+                mental.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3
+                data-en="How does the service work?"
+                data-es="¿Cómo funciona el servicio?"
+                data-fr="Comment fonctionne le service ?"
+              >
+                ¿Cómo funciona el servicio?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p
+                data-en="Our service is simple and accessible. After registering, you can schedule a session with a mental health professional that fits your needs. Sessions are conducted via secure video call."
+                data-es="Nuestro servicio es simple y accesible. Después de registrarte, puedes agendar una sesión con un profesional de la salud mental que se adapte a tus necesidades. Las sesiones se realizan a través de videollamadas seguras."
+                data-fr="Notre service est simple et accessible. Après l'inscription, vous pouvez planifier une session avec un professionnel de santé mentale qui correspond à vos besoins. Les sessions sont menées via des appels vidéo sécurisés."
+              >
+                Nuestro servicio es simple y accesible. Después de registrarte,
+                puedes agendar una sesión con un profesional de la salud mental
+                que se adapte a tus necesidades. Las sesiones se realizan a
+                través de videollamadas seguras.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3
+                data-en="Is it confidential?"
+                data-es="¿Es confidencial?"
+                data-fr="Est-ce confidentiel ?"
+              >
+                ¿Es confidencial?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p
+                data-en="Yes, all sessions are completely confidential. Our professionals are required to maintain confidentiality according to applicable laws and regulations."
+                data-es="Sí, todas las sesiones son completamente confidenciales. Nuestros profesionales están obligados a mantener la confidencialidad según las leyes y regulaciones aplicables."
+                data-fr="Oui, toutes les sessions sont strictement confidentielles. Nos professionnels sont tenus de respecter la confidentialité conformément aux lois et réglementations applicables."
+              >
+                Sí, todas las sesiones son completamente confidenciales.
+                Nuestros profesionales están obligados a mantener la
+                confidencialidad según las leyes y regulaciones aplicables.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3
+                data-en="How do I schedule a session?"
+                data-es="¿Cómo agendo una sesión?"
+                data-fr="Comment planifier une session ?"
+              >
+                ¿Cómo agendo una sesión?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p
+                data-en="You can schedule a session through our web platform or mobile app. Simply select a professional, choose a date and time that works for you, and confirm your booking."
+                data-es="Puedes agendar una sesión a través de nuestra plataforma web o aplicación móvil. Simplemente selecciona un profesional, elige la fecha y hora que más te convenga y confirma tu reserva."
+                data-fr="Vous pouvez planifier une session via notre plateforme web ou application mobile. Sélectionnez simplement un professionnel, choisissez une date et une heure qui vous conviennent et confirmez votre réservation."
+              >
+                Puedes agendar una sesión a través de nuestra plataforma web o
+                aplicación móvil. Simplemente selecciona un profesional, elige
+                la fecha y hora que más te convenga y confirma tu reserva.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3
+                data-en="In which languages are services offered?"
+                data-es="¿En qué idiomas ofrecen los servicios?"
+                data-fr="Dans quels langages sont offerts les services ?"
+              >
+                ¿En qué idiomas ofrecen los servicios?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p
+                data-en="We offer services in Spanish and English. Our professionals are bilingual and can adapt to your language preferences."
+                data-es="Ofrecemos servicios en español e inglés. Nuestros profesionales son bilingües y pueden adaptarse a tus preferencias de idioma."
+                data-fr="Nous offrons des services en espagnol et en anglais. Nos professionnels sont bilingues et peuvent s'adapter à vos préférences linguistiques."
+              >
+                Ofrecemos servicios en español e inglés. Nuestros profesionales
+                son bilingües y pueden adaptarse a tus preferencias de idioma.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA after FAQ section -->
+    <div class="container" style="text-align: center; margin: 2rem 0">
+      <a
+        href="https://calendly.com/matt-mindnation/30min"
+        class="cta-btn cta-highlight"
+        data-en="Still have questions? Book a Demo"
+        data-es="¿Tienes dudas? Reserva una demo"
+        data-fr="Vous avez encore des questions ? Réservez une démo"
+        >¿Tienes dudas? Reserva una demo</a
+      >
+    </div>
+
+    <!-- Sección As Seen On (Medios de comunicación) -->
+    <section
+      class="as-seen-on fade-in-section"
+      style="background: #f6f6f6; padding: 2rem 0"
+    >
+      <div class="container" style="text-align: center">
+        <h2
+          style="
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #333;
+          "
+        >
+          As Seen On
+        </h2>
+        <div
+          class="as-seen-logos"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+          "
+        >
+          <img
+            src="assets/images/press/anc.png"
+            alt="ANC"
+            style="height: 40px; opacity: 0.7"
+          />
+          <img
+            src="assets/images/press/cnn.png"
+            alt="CNN"
+            style="height: 40px; opacity: 0.7"
+          />
+          <img
+            src="assets/images/press/forbes.png"
+            alt="Forbes"
+            style="height: 40px; opacity: 0.7"
+          />
+          <img
+            src="assets/images/press/Rappler.png"
+            alt="Rappler"
+            style="height: 40px; opacity: 0.7"
+          />
+          <img
+            src="assets/images/press/tatler.png"
+            alt="Tatler Asia"
+            style="height: 40px; opacity: 0.7"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact fade-in-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2
+            class="section-title"
+            data-en="Contact Us"
+            data-es="Contáctanos"
+            data-fr="Contactez-nous"
+          >
+            Contáctanos
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="We would love to know how we can help you"
+            data-es="Nos encantaría saber cómo podemos ayudarte"
+            data-fr="Nous aimerions savoir comment nous pouvons vous aider"
+          >
+            Nos encantaría saber cómo podemos ayudarte
+          </p>
+        </div>
+        <form
+          method="POST"
+          action="https://mindnation.com/contact"
+          accept-charset="UTF-8"
+          class="contact-form"
+        >
+          <input
+            name="_token"
+            type="hidden"
+            value="w2qxa5O8MJ3gooo75NH2LIncQ6oRUmoloKfSMZJs"
+          />
+          <div
+            class="form-title mb-4 text-center"
+            data-en="We would love to know how we can help you"
+            data-es="Nos encantaría saber cómo podemos ayudarte"
+            data-fr="Nous aimerions savoir comment nous pouvons vous aider"
+          >
+            Nos encantaría saber cómo podemos ayudarte
+          </div>
+          <div
+            class="form-response mb-4 text-success"
+            style="display: none"
+          ></div>
+          <div class="row px-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <input
+                class="form-control form-control-lg es"
+                placeholder="Nombre"
+                data-en="First Name"
+                data-es="Nombre"
+                name="first_name"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="row px-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <input
+                class="form-control form-control-lg es"
+                placeholder="Apellidos"
+                data-en="Last Name"
+                data-es="Apellidos"
+                name="last_name"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="row px-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <select class="form-control" name="inquiry_type">
+                <option
+                  selected="selected"
+                  value=""
+                  data-en="Choose an inquiry"
+                  data-es="Elige una consulta"
+                  data-fr="Choisir une consultation"
+                >
+                  Elige una consulta
+                </option>
+                <option
+                  value="Support Inquiry"
+                  data-en="Support Inquiry"
+                  data-es="Consulta de soporte"
+                  data-fr="Consultation d'aide"
+                >
+                  Consulta de soporte
+                </option>
+                <option
+                  value="Business Inquiry"
+                  data-en="Business Inquiry"
+                  data-es="Consulta comercial"
+                  data-fr="Consultation commerciale"
+                >
+                  Consulta comercial
+                </option>
+                <option
+                  value="Booking Inquiry"
+                  data-en="Booking Inquiry"
+                  data-es="Consulta de reservas"
+                  data-fr="Consultation de réservation"
+                >
+                  Consulta de reservas
+                </option>
+                <option
+                  value="Customer Care"
+                  data-en="Customer Care"
+                  data-es="Atención al cliente"
+                  data-fr="Service client"
+                >
+                  Atención al cliente
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row px-2 pt-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <input
+                class="form-control form-control-lg es"
+                placeholder="Correo electrónico corporativo"
+                data-en="Corporate Email"
+                data-es="Correo electrónico corporativo"
+                name="email"
+                type="email"
+              />
+            </div>
+          </div>
+          <div class="row px-2 pt-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <input
+                class="form-control form-control-lg es"
+                placeholder="Puesto"
+                data-en="Role"
+                data-es="Puesto"
+                name="role"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="row px-2 pt-2">
+            <div class="col-12 px-2 form-group mb-3 mb-md-4">
+              <input
+                class="form-control form-control-lg es"
+                placeholder="Empleador"
+                data-en="Employer"
+                data-es="Empleador"
+                name="company_name"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="row px-2">
+            <!-- Country code here -->
+          </div>
+          <div class="row px-2">
+            <div class="col px-2 form-group mb-3 mb-md-4">
+              <textarea
+                class="form-control form-control-lg es"
+                placeholder="¿Cómo podemos ayudarte?"
+                data-en="How can we help you?"
+                data-es="¿Cómo podemos ayudarte?"
+                rows="6"
+                name="message"
+                cols="50"
+              ></textarea>
+            </div>
+          </div>
+          <div class="mt-3 text-center">
+            <input
+              class="btn btn-lg btn-min-width-lg mx-auto btn-purple"
+              type="submit"
+              value="Enviar"
+              data-en="Send"
+              data-es="Enviar"
+              data-fr="Envoyer"
+            />
+          </div>
+          <div class="loading mt-3" style="display: none">
+            <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+            <span
+              class="sr-only"
+              data-en="Loading..."
+              data-es="Cargando..."
+              data-fr="Chargement..."
+              >Cargando...</span
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sección de Llamado a la Acción Final (CTA) -->
+    <section class="final-cta fade-in-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2
+          id="cta-heading"
+          data-en="Ready to Transform Your Workplace?"
+          data-es="¿Listo para Transformar tu Lugar de Trabajo?"
+          data-fr="Prêt pour transformer votre lieu de travail ?"
+        >
+          ¿Listo para Transformar tu Lugar de Trabajo?
+        </h2>
+        <a
+          href="https://calendly.com/matt-mindnation/30min"
+          class="cta-btn"
+          data-en="Schedule a Demo"
+          data-es="Agendar una Demo"
+          data-fr="Planifier une démo"
+          >Agendar una Demo</a
+        >
+        <p
+          class="cta-subtext"
+          style="
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          data-en="Join leading companies in prioritizing employee mental health."
+          data-es="Únete a empresas líderes en priorizar la salud mental de los empleados."
+          data-fr="Rejoignez des entreprises leaders en priorisant la santé mentale des employés."
+        >
+          Únete a empresas líderes en priorizar la salud mental de los
+          empleados.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a
+              href="/privacy"
+              data-en="Privacy Policy"
+              data-es="Política de Privacidad"
+              data-fr="Politique de confidentialité"
+              >Política de Privacidad</a
+            >
+            <a
+              href="/terms"
+              data-en="Terms of Service"
+              data-es="Términos de Servicio"
+              data-fr="Termes de service"
+              >Términos de Servicio</a
+            >
+            <a
+              href="https://calendly.com/matt-mindnation/30min"
+              data-en="Contact Us"
+              data-es="Contáctanos"
+              data-fr="Contactez-nous"
+              >Contáctanos</a
+            >
+          </div>
+          <div class="footer-social">
+            <a
+              href="#"
+              aria-label="Facebook"
+              data-en-aria-label="Facebook"
+              data-es-aria-label="Facebook"
+              data-fr-aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              data-en-aria-label="Twitter"
+              data-es-aria-label="Twitter"
+              data-fr-aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              data-en-aria-label="LinkedIn"
+              data-es-aria-label="LinkedIn"
+              data-fr-aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

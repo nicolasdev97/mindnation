@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F5F6FA"/>
+    
+    <!-- Header -->
+    <rect x="40" y="40" width="720" height="80" rx="10" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="2"/>
+    <rect x="60" y="60" width="200" height="40" rx="5" fill="#00A3B4"/>
+    
+    <!-- Sidebar -->
+    <rect x="40" y="140" width="200" height="420" rx="10" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="2"/>
+    <rect x="60" y="160" width="160" height="40" rx="5" fill="#2C3E50"/>
+    <rect x="60" y="220" width="160" height="40" rx="5" fill="#2C3E50"/>
+    <rect x="60" y="280" width="160" height="40" rx="5" fill="#2C3E50"/>
+    
+    <!-- Main Content -->
+    <rect x="260" y="140" width="500" height="200" rx="10" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="2"/>
+    <rect x="280" y="160" width="460" height="160" rx="5" fill="#00A3B4"/>
+    
+    <!-- Charts -->
+    <rect x="260" y="360" width="240" height="200" rx="10" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="2"/>
+    <rect x="280" y="380" width="200" height="160" rx="5" fill="#2C3E50"/>
+    
+    <rect x="520" y="360" width="240" height="200" rx="10" fill="#FFFFFF" stroke="#E1E4E8" stroke-width="2"/>
+    <rect x="540" y="380" width="200" height="160" rx="5" fill="#00A3B4"/>
+</svg> 
