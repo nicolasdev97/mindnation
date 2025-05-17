@@ -1278,6 +1278,13 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .selected span {
+    display: none;
+  }
+
+  .options {
+    width: max-content;
+  }
   .mobile-menu-btn {
     display: flex;
   }
@@ -1879,6 +1886,7 @@ p {
   display: flex;
   gap: var(--spacing-lg);
   align-items: center;
+  justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
