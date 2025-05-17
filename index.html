@@ -27,6 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
     <link
@@ -65,15 +69,38 @@
     <!-- Navegación principal -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="nav-container">
-        <a href="/" class="logo" aria-label="MindNation Home">
-          <img
-            src="assets/images/mindnation-logo.png"
-            alt="MindNation Logo"
-            width="160"
-            height="40"
-            fetchpriority="high"
-          />
-        </a>
+        <!-- Logo de Mindnation y botón de idiomas -->
+        <div class="nav-left">
+          <!-- Logo de Mindnation -->
+          <a href="/" class="logo" aria-label="MindNation Home">
+            <img
+              src="assets/images/mindnation-logo-1.png"
+              alt="MindNation Logo"
+              width="160"
+              height="40"
+              fetchpriority="high"
+            />
+          </a>
+          <!-- Botón de idiomas -->
+          <div class="custom-select">
+            <div class="selected">
+              <img src="assets/images/spanish.jpg" alt="Español" />
+              <span>Español</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <ul class="options">
+              <li data-lang="es">
+                <img src="assets/images/spanish.jpg" alt="Español" />
+                Español
+              </li>
+              <li data-lang="en">
+                <img src="assets/images/english.jpg" alt="English" />
+                English
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Botón de menú hamburguesa -->
         <button
           class="mobile-menu-btn"
           aria-label="Toggle menu"
@@ -83,35 +110,16 @@
         >
           <i class="fas fa-bars"></i>
         </button>
+        <!-- Boton de agendar demo -->
         <div class="nav-links">
           <a
             href="https://calendly.com/matt-mindnation/30min"
             class="cta-btn"
-            data-en="Schedule Demo"
-            data-es="Agendar Demo"
+            data-en="SCHEDULE DEMO"
+            data-es="AGENDAR DEMO"
             data-fr="Planifier une démo"
-            >Agendar Demo</a
+            >AGENDAR DEMO</a
           >
-          <select
-            class="lang-switch"
-            aria-label="Seleccionar idioma"
-            style="
-              margin-left: 1rem;
-              padding: 0.5rem 1.5rem;
-              border-radius: 20px;
-              font-size: 1rem;
-            "
-          >
-            <option value="es" data-flag="assets/images/spanish.jpg">
-              🇪🇸 Español
-            </option>
-            <option value="en" data-flag="assets/images/english.jpg">
-              🇬🇧 English
-            </option>
-            <option value="fr" data-flag="assets/images/france.png">
-              🇫🇷 Français
-            </option>
-          </select>
         </div>
       </div>
     </nav>
@@ -175,7 +183,7 @@
                     >Configuración en 15 minutos</span
                   ></span
                 >
-                <span>•</span>
+                <!-- <span>•</span> -->
                 <span
                   ><i class="fas fa-shield-alt"></i>
                   <span
