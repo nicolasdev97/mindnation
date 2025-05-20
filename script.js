@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function switchLanguage(lang) {
     currentLang = lang;
     document.querySelectorAll("[data-en][data-es][data-fr]").forEach((el) => {
-      el.textContent = el.getAttribute(`data-${lang}`);
+      el.innerHTML = el.getAttribute(`data-${lang}`);
     });
     document
       .querySelectorAll(
