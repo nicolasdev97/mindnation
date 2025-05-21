@@ -274,11 +274,11 @@ backToTop.addEventListener("click", () => {
 });
 
 // Showcase Slider
-const sliderTrack = document.querySelector(".slider-track");
-const slides = document.querySelectorAll(".slider-slide");
-const dots = document.querySelectorAll(".slider-dot");
-const prevBtn = document.querySelector(".slider-prev");
-const nextBtn = document.querySelector(".slider-next");
+const sliderTrack = document.querySelector(".showcase-slider-track");
+const slides = document.querySelectorAll(".showcase-slider-slide");
+const dots = document.querySelectorAll(".showcase-slider-dot");
+const prevBtn = document.querySelector(".showcase-slider-prev");
+const nextBtn = document.querySelector(".showcase-slider-next");
 let currentSlide = 0;
 let slideInterval;
 
@@ -350,7 +350,7 @@ updateSlider();
 startInterval();
 
 // Pause on hover
-const sliderContainer = document.querySelector(".slider-container");
+const sliderContainer = document.querySelector(".showcase-slider");
 sliderContainer.addEventListener("mouseenter", () =>
   clearInterval(slideInterval)
 );
