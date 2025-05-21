@@ -462,6 +462,263 @@ p {
   }
 }
 
+/* Showcase slider */
+
+.showcase {
+  padding: var(--spacing-xl) 0;
+  background: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Título de la sección de showcase slider */
+
+.showcase-title {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Slider de la sección de showcase slider */
+
+.showcase-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Borde colorido del slider de la sección de showcase slider */
+
+.showcase-slider-top-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    #ff452b 20%,
+    #fdd33d 20%,
+    #fdd33d 40%,
+    #00b1a3 40%,
+    #00b1a3 60%,
+    #774e9d 60%,
+    #774e9d 80%,
+    #0065a0 80%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 8px;
+  z-index: 1000;
+}
+
+/* Todas las diapositivas de la sección de showcase slider */
+
+.showcase-slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+/* Diapositiva individual de la sección de showcase slider */
+
+.showcase-slider-slide {
+  min-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.showcase-slider-slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+/* Contenido de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl);
+  align-items: center;
+  background: var(--background-primary);
+  border-radius: var(--radius-lg);
+}
+
+/* Imagen de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--background-secondary);
+}
+
+.showcase-slide-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.showcase-slide-image:hover img {
+  transform: scale(1.02);
+}
+
+/* Video de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-video {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  background: var(--background-secondary);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.showcase-slide-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-md);
+}
+
+/* Texto de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-info {
+  padding: var(--spacing-lg);
+}
+
+/* Título del texto de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-info h3 {
+  font-size: 32px;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Información complementaria del texto de la diapositiva de la sección de showcase slider */
+
+.showcase-slide-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Controles del slider de la sección de showcase slider */
+
+.showcase-slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+/* Control de anterior y siguiente del slider de la sección de showcase slider */
+
+.showcase-slider-prev,
+.showcase-slider-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.showcase-slider-prev:hover,
+.showcase-slider-next:hover {
+  background: #00b1a3;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Puntos de contenido del slider de la sección de showcase slider */
+
+.showcase-slider-dots {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* Punto individual de contenido del slider de la sección de showcase slider */
+
+.showcase-slider-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #00b1a3;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+
+.showcase-slider-dot.active {
+  background: #008b80;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .showcase-slide-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .showcase-slide-info {
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+
+  .showcase-slide-info h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .showcase-slide-content {
+    padding: var(--spacing-md);
+  }
+
+  .showcase-slide-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .showcase-slide-info p {
+    font-size: 1rem;
+  }
+
+  .showcase-slider-prev,
+  .showcase-slider-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Footer */
 
 .cta-subtext {
@@ -1637,263 +1894,6 @@ p {
   .back-to-top {
     bottom: var(--spacing-md);
     right: var(--spacing-md);
-    width: 40px;
-    height: 40px;
-  }
-}
-
-/* Showcase slider section */
-
-.showcase {
-  padding: var(--spacing-xl) 0;
-  background: #f5f5f5;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Título de la sección de showcase slider */
-
-.showcase-title {
-  text-align: center;
-  margin-bottom: var(--spacing-xl);
-}
-
-/* Slider de la sección de showcase slider */
-
-.showcase-slider {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  background: var(--background-secondary);
-  box-shadow: var(--shadow-xl);
-}
-
-/* Borde colorido del slider de la sección de showcase slider */
-
-.showcase-slider-top-border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(
-    to right,
-    #ff452b 20%,
-    #fdd33d 20%,
-    #fdd33d 40%,
-    #00b1a3 40%,
-    #00b1a3 60%,
-    #774e9d 60%,
-    #774e9d 80%,
-    #0065a0 80%
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 8px;
-  z-index: 1000;
-}
-
-/* Todas las diapositivas de la sección de showcase slider */
-
-.showcase-slider-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
-}
-
-/* Diapositiva individual de la sección de showcase slider */
-
-.showcase-slider-slide {
-  min-width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.showcase-slider-slide.active {
-  opacity: 1;
-  visibility: visible;
-  position: relative;
-}
-
-/* Contenido de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-xl);
-  padding: var(--spacing-xl);
-  align-items: center;
-  background: var(--background-primary);
-  border-radius: var(--radius-lg);
-}
-
-/* Imagen de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-image {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  background: var(--background-secondary);
-}
-
-.showcase-slide-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-  object-fit: contain;
-}
-
-.showcase-slide-image:hover img {
-  transform: scale(1.02);
-}
-
-/* Video de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-video {
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%;
-  background: var(--background-secondary);
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-}
-
-.showcase-slide-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: var(--radius-md);
-}
-
-/* Texto de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-info {
-  padding: var(--spacing-lg);
-}
-
-/* Título del texto de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-info h3 {
-  font-size: 32px;
-  margin-bottom: var(--spacing-md);
-}
-
-/* Información complementaria del texto de la diapositiva de la sección de showcase slider */
-
-.showcase-slide-info p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Controles del slider de la sección de showcase slider */
-
-.showcase-slider-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-lg);
-}
-
-/* Control de anterior y siguiente del slider de la sección de showcase slider */
-
-.showcase-slider-prev,
-.showcase-slider-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  color: var(--text);
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.showcase-slider-prev:hover,
-.showcase-slider-next:hover {
-  background: #00b1a3;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Puntos de contenido del slider de la sección de showcase slider */
-
-.showcase-slider-dots {
-  display: flex;
-  gap: var(--spacing-sm);
-}
-
-/* Punto individual de contenido del slider de la sección de showcase slider */
-
-.showcase-slider-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  background: #00b1a3;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  opacity: 0.3;
-}
-
-.showcase-slider-dot.active {
-  background: #008b80;
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-@media (max-width: 1024px) {
-  .showcase-slide-content {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
-  }
-
-  .showcase-slide-info {
-    text-align: center;
-    padding: var(--spacing-md);
-  }
-
-  .showcase-slide-info h3 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .showcase {
-    padding: var(--spacing-lg) 0;
-  }
-
-  .showcase-slide-content {
-    padding: var(--spacing-md);
-  }
-
-  .showcase-slide-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .showcase-slide-info p {
-    font-size: 1rem;
-  }
-
-  .showcase-slider-prev,
-  .showcase-slider-next {
     width: 40px;
     height: 40px;
   }
