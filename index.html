@@ -31,6 +31,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icons -->
     <link
@@ -82,13 +86,13 @@
             />
           </a>
           <!-- Botón de idiomas -->
-          <div class="custom-select">
-            <div class="selected">
+          <div class="language-btn-custom">
+            <div class="language-btn-selected">
               <img src="assets/images/spanish.jpg" alt="Español" />
               <span>Español</span>
               <i class="fas fa-chevron-down"></i>
             </div>
-            <ul class="options">
+            <ul class="language-btn-options">
               <li data-lang="es">
                 <img src="assets/images/spanish.jpg" alt="Español" />
                 <span>Español</span>
@@ -100,8 +104,8 @@
             </ul>
           </div>
         </div>
-        <!-- Boton de agendar demo -->
-        <div class="nav-links">
+        <!-- Boton de cta de navbar -->
+        <div class="nav-right-buttons">
           <a
             href="https://calendly.com/matt-mindnation/30min"
             class="cta-btn"
@@ -126,99 +130,86 @@
 
     <!-- Sección Héroe (Hero) -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <span
-            class="hero-badge"
-            data-en="Trusted by 500+ Companies"
-            data-es="Utilizado por más de 500 empresas"
-            data-fr="Utilisé par plus de 500 entreprises"
-            >Utilizado por más de 500 empresas</span
-          >
-          <h1
-            id="hero-heading"
-            data-en="Transform Your Workplace with <span class='highlight'>MENTAL HEALTH SUPPORT</span>"
-            data-es="Transforma tu Lugar de Trabajo con <span class='highlight'>APOYO EN SALUD MENTAL</span>"
-            data-fr="Transformez votre lieu de travail avec <span class='highlight'>lʼAIDE À LA SANTÉ MENTALE</span>"
-          >
-            Transforma tu Lugar de Trabajo con
-            <span class="highlight">APOYO EN SALUD MENTAL</span>
-          </h1>
-          <div class="hero-group">
-            <div class="cta-group">
-              <p
-                class="hero-subtitle"
-                data-en="<strong>Empower</strong> your team with 24/7 access to mental health professionals."
-                data-es="<strong>Potencia</strong> a tu equipo con acceso 24/7 a profesionales de salud mental."
-                data-fr="Donnez à votre équipe accès 24/7 à des professionnels de la santé mentale. Réduisez l'épuisement, augmentez la productivité et créez une culture de travail plus saine."
-              >
-                <strong>Potencia</strong> a tu equipo con acceso 24/7 a
-                profesionales de salud mental.
-              </p>
-              <a
-                href="https://calendly.com/matt-mindnation/30min"
-                class="cta-btn hero-cta"
-                data-en="FREE SCHEDULE DEMO"
-                data-es="AGENDAR DEMO GRATIS"
-                data-fr="Planifier une démo"
-                >AGENDAR DEMO GRATIS</a
-              >
-              <!-- <p
-                  class="cta-subtext"
-                  style="
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 1rem;
-                    margin-top: 1rem;
-                  "
-                ></p> -->
-              <div class="hero-stats">
-                <div class="stat">
-                  <i class="fa-solid fa-user"></i>
-                  <div class="stat-text">
-                    <span class="stat-number">75%</span>
-                    <span
-                      class="stat-label"
-                      data-en="Reduction in Burnout"
-                      data-es="Reducción en Agotamiento"
-                      data-fr="Réduction de l'épuisement"
-                      >Reducción en Agotamiento</span
-                    >
-                  </div>
+      <div class="hero-content">
+        <span
+          class="hero-badge"
+          data-en="Trusted by 500+ Companies"
+          data-es="Utilizado por más de 500 empresas"
+          data-fr="Utilisé par plus de 500 entreprises"
+          >Utilizado por más de 500 empresas
+        </span>
+        <h1
+          class="hero-title"
+          data-en="Transform Your Workplace with <span class='important-hero-title'>MENTAL HEALTH SUPPORT</span>"
+          data-es="Transforma tu Lugar de Trabajo con <span class='important-hero-title'>APOYO EN SALUD MENTAL</span>"
+          data-fr="Transformez votre lieu de travail avec <span class='important-hero-title'>lʼAIDE À LA SANTÉ MENTALE</span>"
+        >
+          Transforma tu Lugar de Trabajo con
+          <span class="important-hero-title">APOYO EN SALUD MENTAL</span>
+        </h1>
+        <div class="hero-division">
+          <div class="hero-division-left">
+            <p
+              class="hero-subtitle"
+              data-en="<strong>Empower</strong> your team with 24/7 access to mental health professionals."
+              data-es="<strong>Potencia</strong> a tu equipo con acceso 24/7 a profesionales de salud mental."
+              data-fr="Donnez à votre équipe accès 24/7 à des professionnels de la santé mentale. Réduisez l'épuisement, augmentez la productivité et créez une culture de travail plus saine."
+            >
+              <strong>Potencia</strong> a tu equipo con acceso 24/7 a
+              profesionales de salud mental.
+            </p>
+            <a
+              href="https://calendly.com/matt-mindnation/30min"
+              class="cta-btn cta-btn-hero"
+              data-en="FREE SCHEDULE DEMO"
+              data-es="AGENDAR DEMO GRATIS"
+              data-fr="Planifier une démo"
+              >AGENDAR DEMO GRATIS
+            </a>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <i class="fa-solid fa-user"></i>
+                <div class="hero-stat-text">
+                  <span class="hero-stat-number">75%</span>
+                  <span
+                    class="hero-stat-label"
+                    data-en="Reduction in Burnout"
+                    data-es="Reducción en Agotamiento"
+                    data-fr="Réduction de l'épuisement"
+                    >Reducción en Agotamiento</span
+                  >
                 </div>
-                <div class="stat">
-                  <i class="fa-solid fa-users-gear"></i>
-                  <div class="stat-text">
-                    <span class="stat-number">3x</span>
-                    <span
-                      class="stat-label"
-                      data-en="Higher Engagement"
-                      data-es="Mayor Compromiso"
-                      data-fr="Mieux engager"
-                      >Mayor Compromiso</span
-                    >
-                  </div>
+              </div>
+              <div class="hero-stat">
+                <i class="fa-solid fa-users-gear"></i>
+                <div class="hero-stat-text">
+                  <span class="hero-stat-number">3x</span>
+                  <span
+                    class="hero-stat-label"
+                    data-en="Higher Engagement"
+                    data-es="Mayor Compromiso"
+                    data-fr="Mieux engager"
+                    >Mayor Compromiso</span
+                  >
                 </div>
-                <div class="stat">
-                  <i class="fa-solid fa-user-group"></i>
-                  <div class="stat-text">
-                    <span class="stat-number">4x</span>
-                    <span
-                      class="stat-label"
-                      data-en="Employee Retention Likelihood"
-                      data-es="Probabilidad de Retención de empleados"
-                      data-fr="Probabilité de rétention des employés"
-                      >Probabilidad de Retención de empleados</span
-                    >
-                  </div>
+              </div>
+              <div class="hero-stat">
+                <i class="fa-solid fa-user-group"></i>
+                <div class="hero-stat-text">
+                  <span class="hero-stat-number">4x</span>
+                  <span
+                    class="hero-stat-label"
+                    data-en="Employee Retention Likelihood"
+                    data-es="Probabilidad de Retención de empleados"
+                    data-fr="Probabilité de rétention des employés"
+                    >Probabilidad de Retención de empleados</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="hero-image">
-              <img src="assets/images/img-hero.png" alt="Hero image" />
-            </div>
+          </div>
+          <div class="hero-division-right">
+            <img src="assets/images/img-hero.png" alt="Hero image" />
           </div>
         </div>
       </div>
@@ -445,6 +436,11 @@
         </h2>
         <div class="stats-grid">
           <div class="stat-card">
+            <img
+              src="assets/images/icon_energy.png"
+              alt="Icon of a man with low energy"
+              style="width: 50px"
+            />
             <div class="stat-number">75%</div>
             <p
               data-en="of employees report experiencing burnout"
@@ -455,6 +451,11 @@
             </p>
           </div>
           <div class="stat-card">
+            <img
+              src="assets/images/icon_energy.png"
+              alt="Icon of a man with low energy"
+              style="width: 50px"
+            />
             <div class="stat-number">$1T</div>
             <p
               data-en="annual cost of workplace stress globally"
@@ -497,6 +498,11 @@
             </p>
           </div> -->
           <div class="stat-card">
+            <img
+              src="assets/images/icon_energy.png"
+              alt="Icon of a man with low energy"
+              style="width: 50px"
+            />
             <div class="stat-number">30–40%</div>
             <p
               data-en="increase in stress-related sick leave since the pandemic"

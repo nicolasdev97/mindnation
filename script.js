@@ -1,8 +1,8 @@
 //Cambiar idioma
 document.addEventListener("DOMContentLoaded", function () {
-  const select = document.querySelector(".custom-select");
-  const selected = select.querySelector(".selected");
-  const options = select.querySelector(".options");
+  const select = document.querySelector(".language-btn-custom");
+  const selected = select.querySelector(".language-btn-selected");
+  const options = select.querySelector(".language-btn-options");
   let currentLang = "es";
 
   function switchLanguage(lang) {
@@ -193,7 +193,7 @@ document
 
 // Mobile Menu
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-right-buttons");
 let isMenuOpen = false;
 
 mobileMenuBtn.addEventListener("click", () => {
