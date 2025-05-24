@@ -631,7 +631,7 @@ span {
 
 /* Título de la sección de showcase slider */
 
-.showcase-title {
+.showcase > .section-container > h2 {
   text-align: center;
   margin-bottom: var(--spacing-xl);
 }
@@ -836,19 +836,21 @@ span {
   opacity: 1;
 }
 
+/* <----------------------------------------------> Showcase slider responsive <----------------------------------------------> */
+
 @media (max-width: 1024px) {
+  /* Contenido de la diapositiva de la sección de showcase slider */
+
   .showcase-slide-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
 
+  /* Texto de la diapositiva de la sección de showcase slider */
+
   .showcase-slide-info {
     text-align: center;
     padding: var(--spacing-md);
-  }
-
-  .showcase-slide-info h3 {
-    font-size: 1.75rem;
   }
 }
 
@@ -857,17 +859,25 @@ span {
     padding: var(--spacing-lg) 0;
   }
 
+  /* Contenido de la diapositiva de la sección de showcase slider */
+
   .showcase-slide-content {
     padding: var(--spacing-md);
   }
+
+  /* Título del texto de la diapositiva de la sección de showcase slider */
 
   .showcase-slide-info h3 {
     font-size: 1.5rem;
   }
 
+  /* Información complementaria del texto de la diapositiva de la sección de showcase slider */
+
   .showcase-slide-info p {
     font-size: 1rem;
   }
+
+  /* Control de anterior y siguiente del slider de la sección de showcase slider */
 
   .showcase-slider-prev,
   .showcase-slider-next {
