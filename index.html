@@ -72,16 +72,14 @@
   <body>
     <!-- Navegación principal -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <div class="nav-container">
-        <!-- Logo de Mindnation y botón de idiomas -->
+      <div class="section-container nav-container">
+        <!-- Seccion izquierda del navbar -->
         <div class="nav-left">
           <!-- Logo de Mindnation -->
           <a href="/" class="logo" aria-label="MindNation Home">
             <img
               src="assets/images/mindnation-logo-1.png"
               alt="MindNation Logo"
-              width="160"
-              height="40"
               fetchpriority="high"
             />
           </a>
@@ -115,7 +113,7 @@
             >AGENDAR DEMO</a
           >
         </div>
-        <!-- Botón de menú hamburguesa -->
+        <!-- Menu móvil del navbar -->
         <button
           class="mobile-menu-btn"
           aria-label="Toggle menu"
@@ -130,85 +128,107 @@
 
     <!-- Sección de hero -->
     <section class="hero" aria-labelledby="Hero heading">
-      <div class="hero-content">
-        <span
-          class="hero-badge"
+      <div class="section-container hero-container">
+        <!-- Texto superior pequeño de la sección de hero -->
+        <p
           data-en="Trusted by 500+ Companies"
           data-es="Utilizado por más de 500 empresas"
           data-fr="Utilisé par plus de 500 entreprises"
-          >Utilizado por más de 500 empresas
-        </span>
+        >
+          Utilizado por más de 500 empresas
+        </p>
+        <!-- Título de la sección de hero -->
         <h1
-          class="hero-title"
-          data-en="Transform Your Workplace with <span class='important-hero-title'>MENTAL HEALTH SUPPORT</span>"
-          data-es="Transforma tu Lugar de Trabajo con <span class='important-hero-title'>APOYO EN SALUD MENTAL</span>"
-          data-fr="Transformez votre lieu de travail avec <span class='important-hero-title'>lʼAIDE À LA SANTÉ MENTALE</span>"
+          data-en="Transform Your Workplace with <span>MENTAL HEALTH SUPPORT</span>"
+          data-es="Transforma tu Lugar de Trabajo con <span>APOYO EN SALUD MENTAL</span>"
+          data-fr="Transformez votre lieu de travail avec <span>lʼAIDE À LA SANTÉ MENTALE</span>"
         >
           Transforma tu Lugar de Trabajo con
-          <span class="important-hero-title">APOYO EN SALUD MENTAL</span>
+          <span>APOYO EN SALUD MENTAL</span>
         </h1>
+        <!-- Hero dividido en dos secciones para texto e imagen -->
         <div class="hero-division">
+          <!-- Sección izquierda de la sección de hero -->
           <div class="hero-division-left">
-            <p
-              class="hero-subtitle"
-              data-en="<strong>Empower</strong> your team with 24/7 access to mental health professionals."
-              data-es="<strong>Potencia</strong> a tu equipo con acceso 24/7 a profesionales de salud mental."
+            <!-- Subtítulo de la sección de hero -->
+            <h3
+              data-en="<span>Empower</span> your team with 24/7 access to mental health professionals."
+              data-es="<span>Potencia</span> a tu equipo con acceso 24/7 a profesionales de salud mental."
               data-fr="Donnez à votre équipe accès 24/7 à des professionnels de la santé mentale. Réduisez l'épuisement, augmentez la productivité et créez une culture de travail plus saine."
             >
-              <strong>Potencia</strong> a tu equipo con acceso 24/7 a
-              profesionales de salud mental.
-            </p>
+              <span>Potencia</span> a tu equipo con acceso 24/7 a profesionales
+              de salud mental.
+            </h3>
+            <!-- Botón de cta de la sección de hero -->
             <a
               href="https://calendly.com/matt-mindnation/30min"
-              class="cta-btn cta-btn-hero"
+              class="cta-btn cta-btn-big"
               data-en="FREE SCHEDULE DEMO"
               data-es="AGENDAR DEMO GRATIS"
               data-fr="Planifier une démo"
               >AGENDAR DEMO GRATIS
             </a>
+            <!-- Estadísticas de la sección de hero -->
             <div class="hero-stats">
+              <!-- Estadística individual de la sección de hero -->
               <div class="hero-stat">
+                <!-- Icono de las estadísticas de la sección de hero -->
                 <i class="fa-solid fa-user"></i>
+                <!-- Texto (Número e información complementaria) de las estadísticas de la sección de hero -->
                 <div class="hero-stat-text">
-                  <span class="hero-stat-number">75%</span>
-                  <span
-                    class="hero-stat-label"
+                  <!-- Número en el texto de las estadísticas de la sección de hero -->
+                  <h2>75%</h2>
+                  <!-- Información complementaria del texto de las estadísticas de la sección de hero -->
+                  <p
                     data-en="Reduction in Burnout"
                     data-es="Reducción en Agotamiento"
                     data-fr="Réduction de l'épuisement"
-                    >Reducción en Agotamiento</span
                   >
+                    Reducción en Agotamiento
+                  </p>
                 </div>
               </div>
+              <!-- Estadística individual de la sección de hero -->
               <div class="hero-stat">
+                <!-- Icono de las estadísticas de la sección de hero -->
                 <i class="fa-solid fa-users-gear"></i>
+                <!-- Texto (Número e información complementaria) de las estadísticas de la sección de hero -->
                 <div class="hero-stat-text">
-                  <span class="hero-stat-number">3x</span>
-                  <span
-                    class="hero-stat-label"
+                  <!-- Número en el texto de las estadísticas de la sección de hero -->
+                  <h2>3x</h2>
+                  <!-- Información complementaria del texto de las estadísticas de la sección de hero -->
+                  <p
                     data-en="Higher Engagement"
                     data-es="Mayor Compromiso"
                     data-fr="Mieux engager"
-                    >Mayor Compromiso</span
                   >
+                    Mayor Compromiso
+                  </p>
                 </div>
               </div>
+              <!-- Estadística individual de la sección de hero -->
               <div class="hero-stat">
+                <!-- Icono de las estadísticas de la sección de hero -->
                 <i class="fa-solid fa-user-group"></i>
+                <!-- Texto (Número e información complementaria) de las estadísticas de la sección de hero -->
                 <div class="hero-stat-text">
-                  <span class="hero-stat-number">4x</span>
-                  <span
-                    class="hero-stat-label"
+                  <!-- Número en el texto de las estadísticas de la sección de hero -->
+                  <h2>4x</h2>
+                  <!-- Información complementaria del texto de las estadísticas de la sección de hero -->
+                  <p
                     data-en="Employee Retention Likelihood"
                     data-es="Probabilidad de Retención de empleados"
                     data-fr="Probabilité de rétention des employés"
-                    >Probabilidad de Retención de empleados</span
                   >
+                    Probabilidad de Retención de empleados
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Sección derecha de la sección de hero -->
           <div class="hero-division-right">
+            <!-- Imagen de la sección de hero -->
             <img src="assets/images/img-hero.png" alt="Hero image" />
           </div>
         </div>
@@ -217,416 +237,422 @@
 
     <!-- Sección del slider -->
     <section class="showcase" aria-labelledby="Showcase heading">
-      <h2
-        class="showcase-title"
-        data-en="Experience MindNation"
-        data-es="Experimenta MindNation"
-        data-fr="Expérience MindNation"
-      >
-        Experimenta MindNation
-      </h2>
-      <div class="showcase-slider">
-        <div class="showcase-slider-top-border"></div>
-        <div class="showcase-slider-track">
-          <div class="showcase-slider-slide active">
-            <div class="showcase-slide-content">
-              <div class="showcase-slide-image">
-                <img
-                  src="assets/images/dashboard.png"
-                  alt="MindNation Dashboard Interface"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                  style="object-fit: contain"
-                />
-              </div>
-              <div class="showcase-slide-info">
-                <h3
-                  data-en="Powerful Dashboard"
-                  data-es="Panel de Control Potente"
-                  data-fr="Tableau de bord puissant"
-                >
-                  Panel de Control Potente
-                </h3>
-                <p
-                  data-en="Monitor and manage your team's mental health with our intuitive dashboard. Track engagement, measure impact, and make data-driven decisions."
-                  data-es="Monitorea y gestiona la salud mental de tu equipo con nuestro panel intuitivo. Rastrea el compromiso, mide el impacto y toma decisiones basadas en datos."
-                  data-fr="Surveillez et gérez la santé mentale de votre équipe avec notre tableau de bord intuitif. Suivez le compromis, mesurez l'impact et prenez des décisions basées sur les données."
-                >
-                  Monitorea y gestiona la salud mental de tu equipo con nuestro
-                  panel intuitivo. Rastrea el compromiso, mide el impacto y toma
-                  decisiones basadas en datos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="showcase-slider-slide">
-            <div class="showcase-slide-content">
-              <div class="showcase-slide-image">
-                <img
-                  src="assets/images/ecosistema.png"
-                  alt="MindNation Mental Health Ecosystem"
-                  width="800"
-                  height="600"
-                  loading="lazy"
-                  style="object-fit: contain"
-                />
-              </div>
-              <div class="showcase-slide-info">
-                <h3
-                  data-en="Full Mental Health Ecosystem"
-                  data-es="Ecosistema Completo de Salud Mental"
-                  data-fr="Système complet de santé mentale"
-                >
-                  Ecosistema Completo de Salud Mental
-                </h3>
-                <p
-                  data-en="A comprehensive mental health ecosystem at your fingertips, providing all the tools and resources your team needs for optimal well-being."
-                  data-es="Un ecosistema completo de salud mental al alcance de tu mano, proporcionando todas las herramientas y recursos que tu equipo necesita para un bienestar óptimo."
-                  data-fr="Un système complet de santé mentale à portée de main, offrant tous les outils et ressources dont votre équipe a besoin pour un bien-être optimal."
-                >
-                  Un ecosistema completo de salud mental al alcance de tu mano,
-                  proporcionando todas las herramientas y recursos que tu equipo
-                  necesita para un bienestar óptimo.
-                </p>
+      <div class="section-container">
+        <h2
+          class="showcase-title"
+          data-en="Experience MindNation"
+          data-es="Experimenta MindNation"
+          data-fr="Expérience MindNation"
+        >
+          Experimenta MindNation
+        </h2>
+        <div class="showcase-slider">
+          <div class="showcase-slider-top-border"></div>
+          <div class="showcase-slider-track">
+            <div class="showcase-slider-slide active">
+              <div class="showcase-slide-content">
+                <div class="showcase-slide-image">
+                  <img
+                    src="assets/images/dashboard.png"
+                    alt="MindNation Dashboard Interface"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="showcase-slide-info">
+                  <h3
+                    data-en="Powerful Dashboard"
+                    data-es="Panel de Control Potente"
+                    data-fr="Tableau de bord puissant"
+                  >
+                    Panel de Control Potente
+                  </h3>
+                  <p
+                    data-en="Monitor and manage your team's mental health with our intuitive dashboard. Track engagement, measure impact, and make data-driven decisions."
+                    data-es="Monitorea y gestiona la salud mental de tu equipo con nuestro panel intuitivo. Rastrea el compromiso, mide el impacto y toma decisiones basadas en datos."
+                    data-fr="Surveillez et gérez la santé mentale de votre équipe avec notre tableau de bord intuitif. Suivez le compromis, mesurez l'impact et prenez des décisions basées sur les données."
+                  >
+                    Monitorea y gestiona la salud mental de tu equipo con
+                    nuestro panel intuitivo. Rastrea el compromiso, mide el
+                    impacto y toma decisiones basadas en datos.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="showcase-slider-slide">
-            <div class="showcase-slide-content">
-              <div class="showcase-slide-image">
-                <img
-                  src="assets/images/app.png"
-                  alt="MindNation Mobile App Interface"
-                  width="400"
-                  height="800"
-                  loading="lazy"
-                  style="object-fit: contain"
-                />
-              </div>
-              <div class="showcase-slide-info">
-                <h3
-                  data-en="Mobile-First Experience"
-                  data-es="Experiencia Móvil Primero"
-                  data-fr="Expérience mobile première"
-                >
-                  Experiencia Móvil Primero
-                </h3>
-                <p
-                  data-en="Access mental health support anytime, anywhere with our user-friendly mobile app. Connect with professionals and access resources on the go."
-                  data-es="Accede al apoyo de salud mental en cualquier momento y lugar con nuestra aplicación móvil fácil de usar. Conéctate con profesionales y accede a recursos sobre la marcha."
-                  data-fr="Accédez à l'aide de la santé mentale en tout moment et en tout lieu avec notre application mobile facile à utiliser. Connectez-vous avec des professionnels et accédez aux ressources en cours de route."
-                >
-                  Accede al apoyo de salud mental en cualquier momento y lugar
-                  con nuestra aplicación móvil fácil de usar. Conéctate con
-                  profesionales y accede a recursos sobre la marcha.
-                </p>
+            <div class="showcase-slider-slide">
+              <div class="showcase-slide-content">
+                <div class="showcase-slide-image">
+                  <img
+                    src="assets/images/ecosistema.png"
+                    alt="MindNation Mental Health Ecosystem"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="showcase-slide-info">
+                  <h3
+                    data-en="Full Mental Health Ecosystem"
+                    data-es="Ecosistema Completo de Salud Mental"
+                    data-fr="Système complet de santé mentale"
+                  >
+                    Ecosistema Completo de Salud Mental
+                  </h3>
+                  <p
+                    data-en="A comprehensive mental health ecosystem at your fingertips, providing all the tools and resources your team needs for optimal well-being."
+                    data-es="Un ecosistema completo de salud mental al alcance de tu mano, proporcionando todas las herramientas y recursos que tu equipo necesita para un bienestar óptimo."
+                    data-fr="Un système complet de santé mentale à portée de main, offrant tous les outils et ressources dont votre équipe a besoin pour un bien-être optimal."
+                  >
+                    Un ecosistema completo de salud mental al alcance de tu
+                    mano, proporcionando todas las herramientas y recursos que
+                    tu equipo necesita para un bienestar óptimo.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="showcase-slider-slide">
-            <div class="showcase-slide-content">
-              <div class="showcase-slide-video">
-                <iframe
-                  src="https://www.youtube.com/embed/CkX_V2I5nA0"
-                  title="MindNation Platform Overview"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  data-en-title="MindNation Platform Overview"
-                  data-es-title="Descripción General de la Plataforma MindNation"
-                  data-fr-title="Présentation générale de la plateforme MindNation"
-                ></iframe>
+            <div class="showcase-slider-slide">
+              <div class="showcase-slide-content">
+                <div class="showcase-slide-image">
+                  <img
+                    src="assets/images/app.png"
+                    alt="MindNation Mobile App Interface"
+                    width="400"
+                    height="800"
+                    loading="lazy"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="showcase-slide-info">
+                  <h3
+                    data-en="Mobile-First Experience"
+                    data-es="Experiencia Móvil Primero"
+                    data-fr="Expérience mobile première"
+                  >
+                    Experiencia Móvil Primero
+                  </h3>
+                  <p
+                    data-en="Access mental health support anytime, anywhere with our user-friendly mobile app. Connect with professionals and access resources on the go."
+                    data-es="Accede al apoyo de salud mental en cualquier momento y lugar con nuestra aplicación móvil fácil de usar. Conéctate con profesionales y accede a recursos sobre la marcha."
+                    data-fr="Accédez à l'aide de la santé mentale en tout moment et en tout lieu avec notre application mobile facile à utiliser. Connectez-vous avec des professionnels et accédez aux ressources en cours de route."
+                  >
+                    Accede al apoyo de salud mental en cualquier momento y lugar
+                    con nuestra aplicación móvil fácil de usar. Conéctate con
+                    profesionales y accede a recursos sobre la marcha.
+                  </p>
+                </div>
               </div>
-              <div class="showcase-slide-info">
-                <h3
-                  data-en="See It in Action"
-                  data-es="Véalo en Acción"
-                  data-fr="Le voir en action"
-                >
-                  Véalo en Acción
-                </h3>
-                <p
-                  data-en="Watch how MindNation transforms workplace mental health support and creates a more engaged, productive workforce."
-                  data-es="Vea cómo MindNation transforma el apoyo a la salud mental en el lugar de trabajo y crea una fuerza laboral más comprometida y productiva."
-                  data-fr="Regardez comment MindNation transforme l'aide à la santé mentale au sein de l'entreprise et crée une force de travail plus engagée et productive."
-                >
-                  Vea cómo MindNation transforma el apoyo a la salud mental en
-                  el lugar de trabajo y crea una fuerza laboral más comprometida
-                  y productiva.
-                </p>
+            </div>
+            <div class="showcase-slider-slide">
+              <div class="showcase-slide-content">
+                <div class="showcase-slide-video">
+                  <iframe
+                    src="https://www.youtube.com/embed/CkX_V2I5nA0"
+                    title="MindNation Platform Overview"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    data-en-title="MindNation Platform Overview"
+                    data-es-title="Descripción General de la Plataforma MindNation"
+                    data-fr-title="Présentation générale de la plateforme MindNation"
+                  ></iframe>
+                </div>
+                <div class="showcase-slide-info">
+                  <h3
+                    data-en="See It in Action"
+                    data-es="Véalo en Acción"
+                    data-fr="Le voir en action"
+                  >
+                    Véalo en Acción
+                  </h3>
+                  <p
+                    data-en="Watch how MindNation transforms workplace mental health support and creates a more engaged, productive workforce."
+                    data-es="Vea cómo MindNation transforma el apoyo a la salud mental en el lugar de trabajo y crea una fuerza laboral más comprometida y productiva."
+                    data-fr="Regardez comment MindNation transforme l'aide à la santé mentale au sein de l'entreprise et crée une force de travail plus engagée et productive."
+                  >
+                    Vea cómo MindNation transforma el apoyo a la salud mental en
+                    el lugar de trabajo y crea una fuerza laboral más
+                    comprometida y productiva.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="showcase-slider-controls">
-        <button
-          class="showcase-slider-prev"
-          aria-label="Previous slide"
-          data-en-aria-label="Previous slide"
-          data-es-aria-label="Diapositiva anterior"
-          data-fr-aria-label="Diapositive précédente"
-        >
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <div class="showcase-slider-dots">
+        <div class="showcase-slider-controls">
           <button
-            class="showcase-slider-dot active"
-            aria-label="Go to slide 1"
-            data-en-aria-label="Go to slide 1"
-            data-es-aria-label="Ir a diapositiva 1"
-            data-fr-aria-label="Aller à la diapositive 1"
-          ></button>
+            class="showcase-slider-prev"
+            aria-label="Previous slide"
+            data-en-aria-label="Previous slide"
+            data-es-aria-label="Diapositiva anterior"
+            data-fr-aria-label="Diapositive précédente"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="showcase-slider-dots">
+            <button
+              class="showcase-slider-dot active"
+              aria-label="Go to slide 1"
+              data-en-aria-label="Go to slide 1"
+              data-es-aria-label="Ir a diapositiva 1"
+              data-fr-aria-label="Aller à la diapositive 1"
+            ></button>
+            <button
+              class="showcase-slider-dot"
+              aria-label="Go to slide 2"
+              data-en-aria-label="Go to slide 2"
+              data-es-aria-label="Ir a diapositiva 2"
+              data-fr-aria-label="Aller à la diapositive 2"
+            ></button>
+            <button
+              class="showcase-slider-dot"
+              aria-label="Go to slide 3"
+              data-en-aria-label="Go to slide 3"
+              data-es-aria-label="Ir a diapositiva 3"
+              data-fr-aria-label="Aller à la diapositive 3"
+            ></button>
+            <button
+              class="showcase-slider-dot"
+              aria-label="Go to slide 4"
+              data-en-aria-label="Go to slide 4"
+              data-es-aria-label="Ir a diapositiva 4"
+              data-fr-aria-label="Aller à la diapositive 4"
+            ></button>
+          </div>
           <button
-            class="showcase-slider-dot"
-            aria-label="Go to slide 2"
-            data-en-aria-label="Go to slide 2"
-            data-es-aria-label="Ir a diapositiva 2"
-            data-fr-aria-label="Aller à la diapositive 2"
-          ></button>
-          <button
-            class="showcase-slider-dot"
-            aria-label="Go to slide 3"
-            data-en-aria-label="Go to slide 3"
-            data-es-aria-label="Ir a diapositiva 3"
-            data-fr-aria-label="Aller à la diapositive 3"
-          ></button>
-          <button
-            class="showcase-slider-dot"
-            aria-label="Go to slide 4"
-            data-en-aria-label="Go to slide 4"
-            data-es-aria-label="Ir a diapositiva 4"
-            data-fr-aria-label="Aller à la diapositive 4"
-          ></button>
+            class="showcase-slider-next"
+            aria-label="Next slide"
+            data-en-aria-label="Next slide"
+            data-es-aria-label="Siguiente diapositiva"
+            data-fr-aria-label="Diapositive suivante"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
-        <button
-          class="showcase-slider-next"
-          aria-label="Next slide"
-          data-en-aria-label="Next slide"
-          data-es-aria-label="Siguiente diapositiva"
-          data-fr-aria-label="Diapositive suivante"
-        >
-          <i class="fas fa-chevron-right"></i>
-        </button>
       </div>
     </section>
 
     <!-- Sección de datos (Problemas) -->
     <section class="data" aria-labelledby="Problem heading">
-      <h2
-        class="data-title"
-        data-en="The Mental Health Challenge in Modern Workplaces"
-        data-es="El Desafío de la Salud Mental en los Lugares de Trabajo Modernos"
-        data-fr="Le défi de la santé mentale dans les lieux de travail modernes"
-      >
-        El Desafío de la Salud Mental en los Lugares de Trabajo Modernos
-      </h2>
-      <div class="data-cards">
-        <div class="data-card">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_energy.png"
-              alt="Icon of a man with low energy"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_energy_1.png"
-              alt="Icon of a man with low energy"
-            />
+      <div class="section-container">
+        <h2
+          class="data-title"
+          data-en="The Mental Health Challenge in Modern Workplaces"
+          data-es="El Desafío de la Salud Mental en los Lugares de Trabajo Modernos"
+          data-fr="Le défi de la santé mentale dans les lieux de travail modernes"
+        >
+          El Desafío de la Salud Mental en los Lugares de Trabajo Modernos
+        </h2>
+        <div class="data-cards">
+          <div class="data-card">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_energy.png"
+                alt="Icon of a man with low energy"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_energy_1.png"
+                alt="Icon of a man with low energy"
+              />
+            </div>
+            <div class="data-card-title">75%</div>
+            <p
+              data-en="of <span>employees</span> report experiencing <span>burnout</span>"
+              data-es="de <span>empleados</span> reportan experimentar <span>agotamiento</span>"
+              data-fr="75 % des employés signalent avoir éprouvé l'épuisement"
+            >
+              de <span>empleados</span> reportan experimentar
+              <span>agotamiento</span>
+            </p>
           </div>
-          <div class="data-card-title">75%</div>
-          <p
-            data-en="of <span>employees</span> report experiencing <span>burnout</span>"
-            data-es="de <span>empleados</span> reportan experimentar <span>agotamiento</span>"
-            data-fr="75 % des employés signalent avoir éprouvé l'épuisement"
-          >
-            de <span>empleados</span> reportan experimentar
-            <span>agotamiento</span>
-          </p>
-        </div>
-        <div class="data-card">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_money.png"
-              alt="Icon of money decreasing"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_money_1.png"
-              alt="Icon of money decreasing"
-            />
+          <div class="data-card">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_money.png"
+                alt="Icon of money decreasing"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_money_1.png"
+                alt="Icon of money decreasing"
+              />
+            </div>
+            <div class="data-card-title">$1T</div>
+            <p
+              data-en="annual <span>cost</span> of <span>workplace stress</span> globally"
+              data-es="<span>costo</span> anual del <span>estrés laboral</span> a nivel global"
+              data-fr="coût annuel de stress au travail à l'échelle mondiale"
+            >
+              <span>costo</span> anual del <span>estrés laboral</span> a nivel
+              global
+            </p>
           </div>
-          <div class="data-card-title">$1T</div>
-          <p
-            data-en="annual <span>cost</span> of <span>workplace stress</span> globally"
-            data-es="<span>costo</span> anual del <span>estrés laboral</span> a nivel global"
-            data-fr="coût annuel de stress au travail à l'échelle mondiale"
-          >
-            <span>costo</span> anual del <span>estrés laboral</span> a nivel
-            global
-          </p>
-        </div>
-        <div class="data-card">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_stress.png"
-              alt="Icon of a man with stress"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_stress_1.png"
-              alt="Icon of a man with stress"
-            />
+          <div class="data-card">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_stress.png"
+                alt="Icon of a man with stress"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_stress_1.png"
+                alt="Icon of a man with stress"
+              />
+            </div>
+            <div class="data-card-title">30–40%</div>
+            <p
+              data-en="increase in <span>stress-related</span> sick <span>leave</span> since the pandemic"
+              data-es="de aumento en <span>bajas laborales</span> por <span>estrés</span> desde la pandemia"
+              data-fr="d'augmentation des congés maladie liés au stress depuis la pandémie"
+            >
+              de aumento en <span>bajas laborales</span> por
+              <span>estrés</span> desde la pandemia
+            </p>
           </div>
-          <div class="data-card-title">30–40%</div>
-          <p
-            data-en="increase in <span>stress-related</span> sick <span>leave</span> since the pandemic"
-            data-es="de aumento en <span>bajas laborales</span> por <span>estrés</span> desde la pandemia"
-            data-fr="d'augmentation des congés maladie liés au stress depuis la pandémie"
-          >
-            de aumento en <span>bajas laborales</span> por
-            <span>estrés</span> desde la pandemia
-          </p>
         </div>
       </div>
     </section>
 
     <!-- Sección de datos (Soluciones) -->
     <section class="data" aria-labelledby="Solution heading">
-      <h2
-        class="data-title"
-        data-en="Comprehensive Mental Health Support"
-        data-es="Apoyo Integral en Salud Mental"
-        data-fr="Aide complète en santé mentale"
-      >
-        Apoyo Integral en Salud Mental
-      </h2>
-      <div class="data-cards">
-        <div class="data-card data-card-solution">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_headphones.png"
-              alt="Icon of headphones"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_headphones_1.png"
-              alt="Icon of headphones"
-            />
+      <div class="section-container">
+        <h2
+          class="data-title"
+          data-en="Comprehensive Mental Health Support"
+          data-es="Apoyo Integral en Salud Mental"
+          data-fr="Aide complète en santé mentale"
+        >
+          Apoyo Integral en Salud Mental
+        </h2>
+        <div class="data-cards">
+          <div class="data-card data-card-solution">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_headphones.png"
+                alt="Icon of headphones"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_headphones_1.png"
+                alt="Icon of headphones"
+              />
+            </div>
+            <h3
+              class="data-card-title data-card-title-solution"
+              data-en="24/7 Professional Support"
+              data-es="Apoyo Profesional 24/7"
+              data-fr="Aide professionnelle 24/7"
+            >
+              Apoyo Profesional 24/7
+            </h3>
+            <p
+              data-en="Access to licensed <span>mental health professionals anytime, anywhere.</span>"
+              data-es="Acceso a <span>profesionales de salud mental</span> licenciados, en <span>cualquier momento y lugar.</span>"
+              data-fr="Accès à des professionnels de santé mentale titulés en tout moment et en tout lieu."
+            >
+              Acceso a <span>profesionales de salud mental</span> licenciados,
+              en
+              <span>cualquier momento y lugar.</span>
+            </p>
           </div>
-          <h3
-            class="data-card-title data-card-title-solution"
-            data-en="24/7 Professional Support"
-            data-es="Apoyo Profesional 24/7"
-            data-fr="Aide professionnelle 24/7"
-          >
-            Apoyo Profesional 24/7
-          </h3>
-          <p
-            data-en="Access to licensed <span>mental health professionals anytime, anywhere.</span>"
-            data-es="Acceso a <span>profesionales de salud mental</span> licenciados, en <span>cualquier momento y lugar.</span>"
-            data-fr="Accès à des professionnels de santé mentale titulés en tout moment et en tout lieu."
-          >
-            Acceso a <span>profesionales de salud mental</span> licenciados, en
-            <span>cualquier momento y lugar.</span>
-          </p>
-        </div>
-        <div class="data-card data-card-solution">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_phone.png"
-              alt="Icon of phone"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_phone_1.png"
-              alt="Icon of phone"
-            />
+          <div class="data-card data-card-solution">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_phone.png"
+                alt="Icon of phone"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_phone_1.png"
+                alt="Icon of phone"
+              />
+            </div>
+            <h3
+              class="data-card-title data-card-title-solution"
+              data-en="Mobile-First Platform"
+              data-es="Plataforma Móvil Primero"
+              data-fr="Plateforme mobile première"
+            >
+              Plataforma Móvil Primero
+            </h3>
+            <p
+              data-en="<span>Easy access</span> through our user-friendly <span>mobile app</span> and <span>web platform.</span>"
+              data-es="<span>Fácil acceso</span> a través de nuestra <span>aplicación móvil</span> y <span>plataforma web</span> intuitiva."
+              data-fr="Accès facile via notre application mobile et plateforme web intuitive."
+            >
+              <span>Fácil acceso</span> a través de nuestra
+              <span>aplicación móvil</span> y
+              <span>plataforma web</span>
+              intuitiva.
+            </p>
           </div>
-          <h3
-            class="data-card-title data-card-title-solution"
-            data-en="Mobile-First Platform"
-            data-es="Plataforma Móvil Primero"
-            data-fr="Plateforme mobile première"
-          >
-            Plataforma Móvil Primero
-          </h3>
-          <p
-            data-en="<span>Easy access</span> through our user-friendly <span>mobile app</span> and <span>web platform.</span>"
-            data-es="<span>Fácil acceso</span> a través de nuestra <span>aplicación móvil</span> y <span>plataforma web</span> intuitiva."
-            data-fr="Accès facile via notre application mobile et plateforme web intuitive."
-          >
-            <span>Fácil acceso</span> a través de nuestra
-            <span>aplicación móvil</span> y
-            <span>plataforma web</span>
-            intuitiva.
-          </p>
-        </div>
-        <div class="data-card data-card-solution">
-          <div class="data-card-image">
-            <img
-              class="data-card-image-default"
-              src="assets/images/icon_data.png"
-              alt="Icon of folder with data"
-            />
-            <img
-              class="data-card-image-hover"
-              src="assets/images/icon_data_1.png"
-              alt="Icon of folder with data"
-            />
+          <div class="data-card data-card-solution">
+            <div class="data-card-image">
+              <img
+                class="data-card-image-default"
+                src="assets/images/icon_data.png"
+                alt="Icon of folder with data"
+              />
+              <img
+                class="data-card-image-hover"
+                src="assets/images/icon_data_1.png"
+                alt="Icon of folder with data"
+              />
+            </div>
+            <h3
+              class="data-card-title data-card-title-solution"
+              data-en="Data-Driven Insights"
+              data-es="Información Basada en Datos"
+              data-fr="Informations basées sur les données"
+            >
+              Información Basada en Datos
+            </h3>
+            <p
+              data-en="<span>Track and improve</span> workplace mental health with <span>actionable analytics.</span>"
+              data-es="<span>Monitorea y mejora</span> la salud mental en el lugar de trabajo con <span>análisis accionables</span>."
+              data-fr="Surveillez et améliorez la santé mentale au sein de l'entreprise avec des analyses actionnables."
+            >
+              <span>Monitorea y mejora</span> la salud mental en el lugar de
+              trabajo con <span>análisis accionables</span>.
+            </p>
           </div>
-          <h3
-            class="data-card-title data-card-title-solution"
-            data-en="Data-Driven Insights"
-            data-es="Información Basada en Datos"
-            data-fr="Informations basées sur les données"
-          >
-            Información Basada en Datos
-          </h3>
-          <p
-            data-en="<span>Track and improve</span> workplace mental health with <span>actionable analytics.</span>"
-            data-es="<span>Monitorea y mejora</span> la salud mental en el lugar de trabajo con <span>análisis accionables</span>."
-            data-fr="Surveillez et améliorez la santé mentale au sein de l'entreprise avec des analyses actionnables."
-          >
-            <span>Monitorea y mejora</span> la salud mental en el lugar de
-            trabajo con <span>análisis accionables</span>.
-          </p>
         </div>
       </div>
     </section>
 
     <!-- Sección de cta importante -->
-    <div class="cta-important">
-      <h3 class="cta-important-title">
-        Obtén más información sobre cómo funciona.
-      </h3>
-      <p class="cta-important-text">
-        Nuestro equipo está listo cuando tú lo estés.
-      </p>
-      <a
-        href="https://calendly.com/matt-mindnation/30min"
-        class="cta-btn cta-btn-hero"
-        data-en="Get Started Now"
-        data-es="Comienza ahora"
-        data-fr="Commencez maintenant"
-        >Comienza ahora</a
-      >
+    <div class="section-container">
+      <div class="cta-important">
+        <h3 class="cta-important-title">
+          Obtén más información sobre cómo funciona.
+        </h3>
+        <p class="cta-important-text">
+          Nuestro equipo está listo cuando tú lo estés.
+        </p>
+        <a
+          href="https://calendly.com/matt-mindnation/30min"
+          class="cta-btn cta-btn-hero"
+          data-en="Get Started Now"
+          data-es="Comienza ahora"
+          data-fr="Commencez maintenant"
+          >Comienza ahora</a
+        >
+      </div>
     </div>
 
     <!-- Sección de empresas que confían y comentarios de profesionales -->
-    <section
-      class="social-proof fade-in-section"
-      aria-labelledby="social-proof-heading"
-    >
+    <section class="social-proof" aria-labelledby="social proof heading">
       <div class="container">
         <h2
-          id="social-proof-heading"
+          class="social-proof-heading"
           data-en="Trusted by Leading Companies"
           data-es="Confiado por Empresas Líderes"
           data-fr="Confiance par des entreprises leaders"
@@ -809,7 +835,7 @@
     </div>
 
     <!-- Sección de comparación -->
-    <section
+    <!-- <section
       class="comparison fade-in-section"
       aria-labelledby="comparison-heading"
     >
@@ -993,7 +1019,7 @@
           </table>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Sección de faq -->
     <section class="faq fade-in-section" id="faq">
