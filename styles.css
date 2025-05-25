@@ -147,7 +147,7 @@ span {
 
 .cta-btn-midle {
   font-size: 18px;
-  padding: 0 8px;
+  padding: 25px 25px;
   border-radius: 8px;
 }
 
@@ -167,6 +167,13 @@ span {
 
 .cta-btn-big:hover {
   background-color: var(--yellow-dark);
+}
+
+/* Título de cada sección */
+
+.section-container > h2 {
+  text-align: center;
+  margin: var(--spacing-sm) 0 var(--spacing-sm);
 }
 
 /* <----------------------------------------------> Navbar <----------------------------------------------> */
@@ -629,12 +636,7 @@ span {
   overflow: hidden;
 }
 
-/* Título de la sección de showcase slider */
-
-.showcase > .section-container > h2 {
-  text-align: center;
-  margin-bottom: var(--spacing-xl);
-}
+/* Título de la sección de showcase slider (Ver ajustes generales) */
 
 /* Slider de la sección de showcase slider */
 
@@ -892,15 +894,7 @@ span {
   background: var(--background-primary);
 }
 
-.data-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin: var(--spacing-sm) 0 var(--spacing-xs);
-}
+/* Título de la sección de datos (Problemas y soluciones) (Ver ajustes generales) */
 
 /* Cartas de la sección de datos (Problemas y soluciones) */
 
@@ -1022,21 +1016,22 @@ span {
   border-radius: 10px;
   padding: var(--spacing-2xl);
   margin: var(--spacing-sm) auto;
-  background-color: #774e9d;
   text-align: center;
+  gap: 15px;
+  background-color: #774e9d;
 }
 
-.cta-important-title {
-  font-size: 40px;
-  color: #fff;
+/* Texto de sección de cta importante */
+
+.cta-important h2,
+.cta-important p {
+  color: var(--white);
 }
 
-.cta-important-text {
-  color: #fff;
-  margin-bottom: var(--spacing-md);
-}
+/* <----------------------------------------------> Aquí voy (Revisar responsive de slider, datos (problemas y soluciones) y cta importante) <----------------------------------------------> */
 
-/* Social Proof Section */
+/* <----------------------------------------------> Social Proof Section <----------------------------------------------> */
+
 .social-proof {
   padding: var(--spacing-xl) 0;
   background: var(--background-primary);
