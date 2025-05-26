@@ -52,22 +52,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      .testimonial-author {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      .testimonial-author img {
-        margin-right: 16px;
-        object-fit: cover;
-        border-radius: 50%;
-        display: block;
-      }
-      .testimonial-author div {
-        text-align: left;
-      }
-    </style>
   </head>
   <body>
     <!-- Navegación principal -->
@@ -708,17 +692,18 @@
       </div>
     </div>
 
-    <!-- Sección de empresas que confían y comentarios de profesionales -->
-    <section class="social-proof" aria-labelledby="social proof heading">
-      <div class="container">
+    <!-- Sección de empresas que confían -->
+    <section class="social-proof" aria-labelledby="Social proof heading">
+      <div class="section-container">
+        <!-- Título de la sección de empresas que confían -->
         <h2
-          class="social-proof-heading"
           data-en="Trusted by Leading Companies"
           data-es="Confiado por Empresas Líderes"
           data-fr="Confiance par des entreprises leaders"
         >
           Confiado por Empresas Líderes
         </h2>
+        <!-- Logos de empresas de la sección de empresas que confían -->
         <div
           class="logos-grid"
           aria-label="Company logos"
@@ -726,157 +711,127 @@
           data-es-aria-label="Logos de empresas"
           data-fr-aria-label="Logos d'entreprises"
         >
-          <img
-            src="assets/images/H&M-Logo.svg.png"
-            alt="H&M"
-            loading="lazy"
-            width="120"
-            height="40"
-          />
-          <img
-            src="assets/images/swo.png"
-            alt="SoftwareOne"
-            loading="lazy"
-            width="120"
-            height="40"
-          />
-          <img
-            src="assets/images/boldr.png"
-            alt="Boldr"
-            loading="lazy"
-            width="120"
-            height="40"
-          />
+          <!-- Logo 1 de empresas de la sección de empresas que confían y comentarios de profesionales -->
+          <img src="assets/images/H&M-Logo.svg.png" alt="H&M" loading="lazy" />
+          <!-- Logo 2 de empresas de la sección de empresas que confían y comentarios de profesionales -->
+          <img src="assets/images/swo.png" alt="SoftwareOne" loading="lazy" />
+          <!-- Logo 3 de empresas de la sección de empresas que confían y comentarios de profesionales -->
+          <img src="assets/images/boldr.png" alt="Boldr" loading="lazy" />
         </div>
-        <div class="testimonial-card">
-          <blockquote>
-            <p
-              data-en="MindNation has transformed how we support our employees' mental health. The platform is intuitive, and the impact on our workplace culture has been remarkable."
-              data-es="MindNation ha transformado cómo apoyamos la salud mental de nuestros empleados. La plataforma es intuitiva y el impacto en nuestra cultura laboral ha sido notable."
-              data-fr="MindNation a transformé la manière dont nous soutenons la santé mentale de nos employés. La plateforme est intuitive et l'impact sur notre culture au travail a été remarquable."
-            >
-              MindNation ha transformado cómo apoyamos la salud mental de
-              nuestros empleados. La plataforma es intuitiva y el impacto en
-              nuestra cultura laboral ha sido notable.
-            </p>
-          </blockquote>
-          <div class="testimonial-author">
-            <img
-              src="assets/images/Sarah.png"
-              alt="Sarah Johnson"
-              width="60"
-              height="60"
-              loading="lazy"
-              style="object-fit: cover; border-radius: 50%; display: block"
-            />
-            <div>
-              <h4>Sarah Johnson</h4>
-              <p
-                data-en="People & Culture Manager"
-                data-es="Gerente de Personas y Cultura"
-                data-fr="Directeur des ressources humaines et culturelles"
-              >
-                Gerente de Personas y Cultura
-              </p>
+        <!-- Testimonios de la sección de empresas que confían -->
+        <div class="testimonial-cards">
+          <!-- Testimonio individual de la sección de empresas que confían -->
+          <div class="testimonial-card">
+            <!-- Autor de testimonio de la sección de empresas que confían -->
+            <div class="testimonial-author">
+              <!-- Imagen de autor de testimonio de la sección de empresas que confían -->
+              <img
+                src="assets/images/Sarah.png"
+                alt="Sarah Johnson"
+                loading="lazy"
+              />
+              <!-- Información de autor de testimonio de la sección de empresas que confían -->
+              <div>
+                <h3>Sarah Johnson</h3>
+                <p
+                  data-en="People & Culture Manager"
+                  data-es="Gerente de Personas y Cultura"
+                  data-fr="Directeur des ressources humaines et culturelles"
+                >
+                  Gerente de Personas y Cultura
+                </p>
+              </div>
             </div>
+            <!-- Línea separadora de testimonio de la sección de empresas que confían -->
+            <hr />
+            <!-- Icono de quote de testimonio de la sección de empresas que confían -->
+            <blockquote>
+              <!-- Comentario de testimonios de la sección de empresas que confían -->
+              <p
+                data-en="MindNation has transformed how we support our employees' mental health. The platform is intuitive, and the impact on our workplace culture has been remarkable."
+                data-es="MindNation ha transformado cómo apoyamos la salud mental de nuestros empleados. La plataforma es intuitiva y el impacto en nuestra cultura laboral ha sido notable."
+                data-fr="MindNation a transformé la manière dont nous soutenons la santé mentale de nos employés. La plateforme est intuitive et l'impact sur notre culture au travail a été remarquable."
+              >
+                MindNation ha transformado cómo apoyamos la salud mental de
+                nuestros empleados. La plataforma es intuitiva y el impacto en
+                nuestra cultura laboral ha sido notable.
+              </p>
+            </blockquote>
           </div>
-        </div>
-        <!-- New testimonials -->
-        <div class="testimonial-card">
-          <blockquote>
-            <p
-              data-en="The support from MindNation's experts has been invaluable. I feel more motivated and less stressed at work."
-              data-es="El apoyo de los expertos de MindNation ha sido invaluable. Me siento más motivado y menos estresado en el trabajo."
-              data-fr="L'aide des experts de MindNation a été précieuse. Je me sens plus motivé et moins stressé au travail."
-            >
-              El apoyo de los expertos de MindNation ha sido invaluable. Me
-              siento más motivado y menos estresado en el trabajo.
-            </p>
-          </blockquote>
-          <div class="testimonial-author">
-            <img
-              src="assets/images/carlos.png"
-              alt="Carlos Martínez"
-              width="60"
-              height="60"
-              loading="lazy"
-              style="object-fit: cover; border-radius: 50%; display: block"
-            />
-            <div>
-              <h4>Carlos Martínez</h4>
-              <p
-                data-en="HR Business Partner (HRBP)"
-                data-es="Socio de Negocios de RRHH (HRBP)"
-                data-fr="Partenaire commercial de ressources humaines (HRBP)"
-              >
-                Socio de Negocios de RRHH (HRBP)
-              </p>
+          <!-- Testimonio individual de la sección de empresas que confían -->
+          <div class="testimonial-card">
+            <!-- Autor de testimonio de la sección de empresas que confían -->
+            <div class="testimonial-author">
+              <!-- Imagen de autor de testimonio de la sección de empresas que confían -->
+              <img
+                src="assets/images/carlos.png"
+                alt="Carlos Martínez"
+                loading="lazy"
+              />
+              <!-- Información de autor de testimonio de la sección de empresas que confían -->
+              <div>
+                <h3>Carlos Martínez</h3>
+                <p
+                  data-en="HR Business Partner (HRBP)"
+                  data-es="Socio de Negocios de RRHH (HRBP)"
+                  data-fr="Partenaire commercial de ressources humaines (HRBP)"
+                >
+                  Socio de Negocios de RRHH (HRBP)
+                </p>
+              </div>
             </div>
+            <!-- Línea separadora de testimonio de la sección de empresas que confían -->
+            <hr />
+            <!-- Icono de quote de testimonio de la sección de empresas que confían -->
+            <blockquote>
+              <!-- Comentario de testimonios de la sección de empresas que confían -->
+              <p
+                data-en="The support from MindNation's experts has been invaluable. I feel more motivated and less stressed at work."
+                data-es="El apoyo de los expertos de MindNation ha sido invaluable. Me siento más motivado y menos estresado en el trabajo."
+                data-fr="L'aide des experts de MindNation a été précieuse. Je me sens plus motivé et moins stressé au travail."
+              >
+                El apoyo de los expertos de MindNation ha sido invaluable. Me
+                siento más motivado y menos estresado en el trabajo.
+              </p>
+            </blockquote>
           </div>
-        </div>
-        <!-- <div class="testimonial-card">
-          <blockquote>
-            <p
-              data-en="I love how easy it is to schedule sessions and get help whenever I need it. Highly recommended!"
-              data-es="Me encanta lo fácil que es agendar sesiones y recibir ayuda cuando la necesito. ¡Muy recomendable!"
-              data-fr="J'aime comment c'est facile d'organiser des sessions et d'obtenir de l'aide quand je le souhaite. Très recommandé !"
-            >
-              Me encanta lo fácil que es agendar sesiones y recibir ayuda cuando
-              la necesito. ¡Muy recomendable!
-            </p>
-          </blockquote>
-          <div class="testimonial-author">
-            <img
-              src="assets/images/anagomez.png"
-              alt="Ana Gómez"
-              width="60"
-              height="60"
-              loading="lazy"
-              style="object-fit: cover; border-radius: 50%; display: block"
-            />
-            <div>
-              <h4>Ana Gómez</h4>
-              <p
-                data-en="Talent Experience Lead"
-                data-es="Líder de Experiencia de Talento"
-                data-fr="Chef d'expérience talent"
-              >
-                Líder de Experiencia de Talento
-              </p>
+          <!-- Testimonio individual de la sección de empresas que confían -->
+          <div class="testimonial-card">
+            <!-- Autor de testimonio de la sección de empresas que confían -->
+            <div class="testimonial-author">
+              <!-- Imagen de autor de testimonio de la sección de empresas que confían -->
+              <img
+                src="assets/images/lucia.png"
+                alt="Lucía Fernández"
+                loading="lazy"
+              />
+              <!-- Información de autor de testimonio de la sección de empresas que confían -->
+              <div>
+                <h3>Lucía Fernández</h3>
+                <p
+                  data-en="Organizational Development Specialist"
+                  data-es="Especialista en Desarrollo Organizacional"
+                  data-fr="Spécialiste en développement organisationnel"
+                >
+                  Especialista en Desarrollo Organizacional
+                </p>
+              </div>
             </div>
-          </div>
-        </div> -->
-        <div class="testimonial-card">
-          <blockquote>
-            <p
-              data-en="MindNation's platform is a game changer for our company. Our team's well-being has improved significantly."
-              data-es="La plataforma de MindNation ha cambiado las reglas del juego para nuestra empresa. El bienestar de nuestro equipo ha mejorado significativamente."
-              data-fr="La plateforme de MindNation a changé les règles du jeu pour notre entreprise. Le bien-être de notre équipe a beaucoup amélioré."
-            >
-              La plataforma de MindNation ha cambiado las reglas del juego para
-              nuestra empresa. El bienestar de nuestro equipo ha mejorado
-              significativamente.
-            </p>
-          </blockquote>
-          <div class="testimonial-author">
-            <img
-              src="assets/images/lucia.png"
-              alt="Lucía Fernández"
-              width="60"
-              height="60"
-              loading="lazy"
-              style="object-fit: cover; border-radius: 50%; display: block"
-            />
-            <div>
-              <h4>Lucía Fernández</h4>
+            <!-- Línea separadora de testimonio de la sección de empresas que confían -->
+            <hr />
+            <!-- Icono de quote de testimonio de la sección de empresas que confían -->
+            <blockquote>
+              <!-- Comentario de testimonios de la sección de empresas que confían -->
               <p
-                data-en="Organizational Development Specialist"
-                data-es="Especialista en Desarrollo Organizacional"
-                data-fr="Spécialiste en développement organisationnel"
+                data-en="MindNation's platform is a game changer for our company. Our team's well-being has improved significantly."
+                data-es="La plataforma de MindNation ha cambiado las reglas del juego para nuestra empresa. El bienestar de nuestro equipo ha mejorado significativamente."
+                data-fr="La plateforme de MindNation a changé les règles du jeu pour notre entreprise. Le bien-être de notre équipe a beaucoup amélioré."
               >
-                Especialista en Desarrollo Organizacional
+                La plataforma de MindNation ha cambiado las reglas del juego
+                para nuestra empresa. El bienestar de nuestro equipo ha mejorado
+                significativamente.
               </p>
-            </div>
+            </blockquote>
           </div>
         </div>
       </div>
