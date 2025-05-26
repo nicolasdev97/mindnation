@@ -1004,6 +1004,15 @@ span {
   font-weight: bolder;
 }
 
+/* <----------------------------------------------> Sección de datos responsive (Problemas y Soluciones) <----------------------------------------------> */
+
+@media (max-width: 768px) {
+  .data-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
 /* <----------------------------------------------> Sección de cta importante <----------------------------------------------> */
 
 .cta-important {
@@ -1028,7 +1037,22 @@ span {
   color: var(--white);
 }
 
-/* <----------------------------------------------> Aquí voy (Revisar responsive de slider, datos (problemas y soluciones) y cta importante) <----------------------------------------------> */
+/* <----------------------------------------------> Sección de cta importante responsive <----------------------------------------------> */
+
+@media (max-width: 768px) {
+  .cta-important {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-important {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* <----------------------------------------------> Aquí voy <----------------------------------------------> */
 
 /* <----------------------------------------------> Social Proof Section <----------------------------------------------> */
 
