@@ -1,15 +1,24 @@
-//Cambiar idioma
+//Cambia el idioma de la página
 document.addEventListener("DOMContentLoaded", function () {
+  //Selecciona el contenedor principal del selector de idioma
   const select = document.querySelector(".language-btn-custom");
+  //Selecciona el botón que muestra el idioma actualmente seleccionado
   const selected = select.querySelector(".language-btn-selected");
+  //Selecciona el contenedor con las opciones de idioma
   const options = select.querySelector(".language-btn-options");
+  //Idioma actual por defecto (español)
   let currentLang = "es";
 
+  //Función para cambiar el idioma de los elementos en la página
   function switchLanguage(lang) {
     currentLang = lang;
+
+    //Cambia el contenido de los elementos con atributos data-en, data-es, data-fr
     document.querySelectorAll("[data-en][data-es][data-fr]").forEach((el) => {
       el.innerHTML = el.getAttribute(`data-${lang}`);
     });
+
+    //Cambia las etiquetas ARIA de accesibilidad si están definidas
     document
       .querySelectorAll(
         "[data-en-aria-label][data-es-aria-label][data-fr-aria-label]"
@@ -20,79 +29,101 @@ document.addEventListener("DOMContentLoaded", function () {
           el.getAttribute(`data-${lang}-aria-label`)
         );
       });
+
+    //Guarda el idioma preferido en localStorage
     localStorage.setItem("preferredLanguage", lang);
   }
 
-  // Mostrar/ocultar opciones
+  //Alterna la visibilidad del menú de opciones al hacer clic en el botón principal
   selected.addEventListener("click", () => {
     options.style.display = options.style.display === "flex" ? "none" : "flex";
   });
 
-  // Seleccionar idioma
+  //Agrega eventos a cada opción de idioma
   options.querySelectorAll("li").forEach((option) => {
     option.addEventListener("click", () => {
       const lang = option.getAttribute("data-lang");
+
+      //Cambia el ícono y el nombre del idioma mostrado en el botón principal
       selected.querySelector("img").src = option.querySelector("img").src;
       selected.querySelector("span").textContent = option.textContent.trim();
+
+      //Cambia el idioma del sitio
       switchLanguage(lang);
+
+      //Oculta el menú de opciones
       options.style.display = "none";
     });
   });
 
-  // Ocultar si haces clic fuera
+  //Cierra el menú si se hace clic fuera del selector
   document.addEventListener("click", (e) => {
     if (!select.contains(e.target)) {
       options.style.display = "none";
     }
   });
 
-  // Cargar idioma guardado
+  //Carga el idioma previamente guardado (si existe)
   const savedLang = localStorage.getItem("preferredLanguage") || "es";
   const defaultOption = options.querySelector(`[data-lang="${savedLang}"]`);
+
   if (defaultOption) {
+    //Cambia el ícono y texto del botón al idioma guardado
     selected.querySelector("img").src = defaultOption.querySelector("img").src;
     selected.querySelector("span").textContent =
       defaultOption.textContent.trim();
+
+    //Aplica el idioma guardado a la página
     switchLanguage(savedLang);
   }
 });
 
-// FAQ Toggle
+//Funcionalidad del FAQ (abrir y cerrar preguntas)
 document.addEventListener("DOMContentLoaded", function () {
+  //Selecciona todos los elementos con la clase "faq-item"
   const faqItems = document.querySelectorAll(".faq-item");
 
+  //Recorre cada elemento FAQ
   faqItems.forEach((item) => {
+    //Selecciona la pregunta dentro del FAQ item actual
     const question = item.querySelector(".faq-question");
+
+    //Añade un evento de clic a la pregunta
     question.addEventListener("click", () => {
-      // Close all other items
+      //Cierra todos los demás items (quita la clase "active")
       faqItems.forEach((otherItem) => {
         if (otherItem !== item) {
           otherItem.classList.remove("active");
         }
       });
-      // Toggle current item
+
+      //Alterna (abre o cierra) el item actual agregando o quitando la clase "active"
       item.classList.toggle("active");
     });
   });
 });
 
-// FAQ Accordion
+//Funcionalidad del FAQ (mostrar y ocultar respuestas)
 document.addEventListener("DOMContentLoaded", function () {
+  //Selecciona todos los elementos con clase "faq-item"
   const faqItems = document.querySelectorAll(".faq-item");
 
+  //Recorre cada FAQ item
   faqItems.forEach((item) => {
+    //Selecciona la pregunta y la respuesta dentro del item actual
     const question = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
 
-    // Set initial state
+    //Estado inicial: respuesta oculta (altura 0 y opacidad 0)
     answer.style.maxHeight = "0px";
     answer.style.opacity = "0";
 
-    // Add click event
+    //Añade evento de clic a la pregunta
     question.addEventListener("click", function () {
+      //Comprueba si el item actual está activo (abierto)
       const isActive = item.classList.contains("active");
 
-      // Close all other items
+      //Cierra todos los otros items (quita clase active y oculta respuesta)
       faqItems.forEach((otherItem) => {
         if (otherItem !== item) {
           const otherAnswer = otherItem.querySelector(".faq-answer");
@@ -101,28 +132,22 @@ document.addEventListener("DOMContentLoaded", function () {
           otherAnswer.style.opacity = "0";
         }
       });
-
-      // Toggle current item
+      //Alterna la visibilidad del item actual
       if (!isActive) {
+        //Si no estaba activo, se abre (se añade clase active y se muestra respuesta)
         item.classList.add("active");
+        //Altura automática según contenido
         answer.style.maxHeight = answer.scrollHeight + "px";
         answer.style.opacity = "1";
       } else {
+        //Si estaba activo, se cierra (quita clase active y oculta respuesta)
         item.classList.remove("active");
         answer.style.maxHeight = "0px";
         answer.style.opacity = "0";
       }
 
-      // Update ARIA
+      //Actualiza atributo ARIA para accesibilidad (indica si está expandido o no)
       question.setAttribute("aria-expanded", !isActive);
-    });
-
-    // Add keyboard support
-    question.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        question.click();
-      }
     });
   });
 });
