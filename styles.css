@@ -18,7 +18,8 @@
   --blue: #0080ca;
   --blue--dark: #0065a0;
 
-  /* Shadows */
+  /* Sombras */
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -26,19 +27,30 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-xl-purple: 0 20px 25px -5px rgba(119, 78, 157, 0.1),
+    0 10px 10px -5px rgba(119, 78, 157, 0.4);
+  --shadow-xl-green: 0 20px 25px -5px rgba(0, 177, 163, 0.1),
+    0 10px 10px -5px rgba(0, 177, 163, 0.4);
 
-  /* Transitions */
-  --transition-fast: all 0.2s ease;
-  --transition-normal: all 0.3s ease;
-  --transition-slow: all 0.5s ease;
+  /* Transiciones */
 
-  /* Border Radius */
+  --transition: all 0.3s ease;
+  --transition-transform: transform 0.3 ease;
+  --transition-transform-color: transform 0.3s ease, color 0.3s ease;
+  --transition-opacity: opacity 0.3s ease;
+  --transition-opacity-visibility: opacity 0.5s ease, visibility 0.5s ease;
+  --transition-height-opacity: max-height 0.3s ease, opacity 0.3s ease;
+
+  /* Radio de borde */
+
   --radius-sm: 4px;
   --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   --radius-full: 9999px;
 
   /* Spacing */
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -128,17 +140,17 @@ span {
   font-size: 14px;
   background-color: var(--green);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
-  /* transition: all 0.3s ease; */
+  transition: var(--transition);
 }
 
 .cta-btn-midle {
   font-size: 18px;
   padding: 25px 25px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
 }
 
 .cta-btn:hover,
@@ -152,7 +164,7 @@ span {
   color: var(--gray-dark);
   font-size: 32px;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
 }
 
 .cta-btn-big:hover {
@@ -179,7 +191,6 @@ span {
   z-index: 1000;
   box-shadow: var(--shadow-sm);
   font-weight: bold;
-  transition: var(--transition-normal);
 }
 
 .nav-container {
@@ -203,7 +214,6 @@ span {
   display: block;
   height: 48px;
   width: auto;
-  /* transition: var(--transition-normal); */
 }
 
 /* Botón de idiomas */
@@ -221,10 +231,11 @@ span {
   justify-content: space-between;
   background: var(--white);
   border: 1px solid var(--gray-dark);
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   gap: 8px;
   padding: 1px 3px;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .language-btn-selected:hover {
@@ -249,7 +260,7 @@ span {
   background: var(--white);
   z-index: 100;
   border: 1px solid var(--gray-dark);
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
 }
 
 .language-btn-options li {
@@ -258,6 +269,7 @@ span {
   gap: 0.5rem;
   padding: 5px;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .language-btn-options li:hover {
@@ -275,6 +287,7 @@ span {
 .nav-right-buttons {
   display: flex;
   align-items: center;
+  gap: var(--spacing-lg);
 }
 
 /* Menu móvil del navbar */
@@ -289,9 +302,9 @@ span {
   font-size: 20px;
   background: transparent;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .mobile-menu-btn:hover {
@@ -335,7 +348,6 @@ span {
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: var(--transition-normal);
   }
 
   .nav-right-buttons.active {
@@ -435,8 +447,6 @@ span {
 
 .hero-stat {
   display: flex;
-  /* transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1); */
 }
 
 /* Icono de las estadísticas de la sección de hero */
@@ -471,9 +481,6 @@ span {
 
 .hero-division-right img {
   width: 350px;
-  /* border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg); */
-  /* transition: var(--transition-normal); */
 }
 
 /* <----------------------------------------------> Hero responsive <----------------------------------------------> */
@@ -632,7 +639,7 @@ span {
   position: relative;
   overflow: hidden;
   padding: 0;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   background: var(--gray-light);
   box-shadow: var(--shadow-xl);
 }
@@ -658,14 +665,14 @@ span {
   );
   background-repeat: no-repeat;
   background-size: 100% 8px;
-  z-index: 1000;
+  z-index: 10;
 }
 
 /* Todas las diapositivas de la sección de showcase slider */
 
 .showcase-slider-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: var(--transition-transform);
   width: 100%;
 }
 
@@ -675,7 +682,7 @@ span {
   min-width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition: var(--transition-opacity-visibility);
   position: absolute;
   left: 0;
   top: 0;
@@ -697,14 +704,14 @@ span {
   padding: var(--spacing-xl);
   align-items: center;
   background: var(--background-primary);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
 }
 
 /* Imagen de la diapositiva de la sección de showcase slider */
 
 .showcase-slide-image {
   position: relative;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   background: var(--background-secondary);
@@ -714,7 +721,7 @@ span {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease;
+  transition: var(--transition);
   object-fit: contain;
 }
 
@@ -730,7 +737,7 @@ span {
   padding-bottom: 56.25%;
   background: var(--background-secondary);
   overflow: hidden;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
 }
 
@@ -741,7 +748,7 @@ span {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
 }
 
 /* Texto de la diapositiva de la sección de showcase slider */
@@ -787,9 +794,9 @@ span {
   color: var(--text);
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .showcase-slider-prev:hover,
@@ -814,10 +821,10 @@ span {
   height: 0.5rem;
   background: #00b1a3;
   border: none;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   cursor: pointer;
-  transition: all 0.3s ease;
   opacity: 0.3;
+  transition: var(--transition);
 }
 
 .showcase-slider-dot.active {
@@ -897,25 +904,24 @@ span {
 
 .data-card {
   background: #fff;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   text-align: center;
-  transition: all 0.3s ease;
   border: 2px solid transparent;
-  box-shadow: 0 8px 20px rgba(182, 182, 182, 0.5);
+  box-shadow: var(--shadow-xl);
   overflow: hidden;
+  transition: var(--transition);
 }
 
 .data-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: var(--shadow-lg);
-  box-shadow: 0 8px 20px rgba(119, 78, 157, 0.5);
-  border-color: #774e9d;
+  box-shadow: var(--shadow-xl-purple);
+  border-color: var(--purple);
 }
 
 .data-card-solution:hover {
-  box-shadow: 0 8px 20px rgba(0, 177, 163, 0.5);
-  border-color: #00b1a3;
+  box-shadow: var(--shadow-xl-green);
+  border-color: var(--green);
 }
 
 /* Icono de la carta de la sección de datos (Problemas y soluciones) */
@@ -935,7 +941,7 @@ span {
   width: 80px;
   max-width: 100%;
   max-height: 100%;
-  transition: opacity 0.3s ease;
+  transition: var(--transition-opacity);
 }
 
 /* Icono por defecto de la carta de la sección de datos (Problemas y soluciones) */
@@ -965,7 +971,7 @@ span {
   font-size: 30px;
   font-weight: bold;
   margin: var(--spacing-sm) 0 var(--spacing-xs);
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: var(--transition);
 }
 
 .data-card:hover .data-card-title {
@@ -980,7 +986,7 @@ span {
 /* Información complementaria de la carta de la sección de datos (Problemas y soluciones) */
 
 .data-card p {
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: var(--transition-transform-color);
 }
 
 .data-card:hover p {
@@ -1012,7 +1018,7 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   padding: var(--spacing-2xl);
   margin: var(--spacing-sm) auto;
   text-align: center;
@@ -1081,11 +1087,12 @@ span {
 
 .testimonial-card {
   width: 75%;
-  border-radius: 16px;
+  border-radius: var(--radius-xl);
   padding: 20px 40px;
   margin-bottom: 15px;
   background: var(--white);
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
 }
 
 .testimonial-card:hover {
@@ -1109,7 +1116,7 @@ span {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
 }
 
 /* Icono de quote de testimonio de la sección de empresas que confían */
@@ -1218,7 +1225,7 @@ span {
   margin-top: var(--spacing-xl);
   overflow-x: auto;
   border: 1px solid var(--gray);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   background: var(--white);
   box-shadow: var(--shadow-md);
 }
@@ -1258,7 +1265,7 @@ span {
 .comparison-table td {
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--border-light);
-  transition: var(--transition-normal);
+  transition: var(--transition);
 }
 
 .comparison-table td:first-child {
@@ -1308,7 +1315,7 @@ span {
 .faq-item {
   border-bottom: 1px solid var(--gray);
   padding: var(--spacing-sm) 0;
-  transition: var(--transition-normal);
+  transition: var(--transition);
 }
 
 .faq-item:last-child {
@@ -1325,10 +1332,10 @@ span {
   color: var(--gray-dark);
   padding: 16px;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   background: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .faq-question:hover {
@@ -1340,7 +1347,7 @@ span {
 .faq-question h3 {
   font-size: 18px;
   color: inherit;
-  transition: var(--transition-normal);
+  transition: var(--transition);
 }
 
 /* Flecha abajo de la pregunta individual de la sección de faq */
@@ -1349,7 +1356,7 @@ span {
   font-size: 20px;
   flex-shrink: 0;
   margin-left: var(--spacing-sm);
-  transition: var(--transition-normal);
+  transition: var(--transition);
 }
 
 .faq-item.active .faq-question {
@@ -1368,7 +1375,7 @@ span {
   padding: 0 var(--spacing-md);
   margin: 0;
   opacity: 0;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: var(--transition-height-opacity);
 }
 
 .faq-item.active .faq-answer {
@@ -1491,10 +1498,6 @@ span {
   text-decoration: none;
 }
 
-.footer .section-container a:hover {
-  text-decoration: underline;
-}
-
 /* Primera columna del footer */
 
 /* Logo de la primera columna del footer */
@@ -1521,7 +1524,7 @@ span {
   text-decoration: none;
   border-radius: var(--radius-full);
   opacity: 0.9;
-  transition: var(--transition-normal);
+  transition: var(--transition);
 }
 
 .footer-social a > i {
@@ -1568,9 +1571,11 @@ span {
 
 .footer .section-container .footer-col-2-text > a {
   color: var(--blue--dark);
+  transition: var(--transition);
 }
 
 .footer .section-container .footer-col-2-text > a:hover {
+  text-decoration: underline;
   color: var(--blue);
 }
 
@@ -1585,9 +1590,11 @@ span {
 .footer-col-3-column a {
   display: flex;
   padding-bottom: 20px;
+  transition: var(--transition);
 }
 
 .footer-col-3-column a:hover {
+  text-decoration: underline;
   color: var(--white);
 }
 
@@ -1636,9 +1643,10 @@ span {
   }
 }
 
-/* Aquí voy */
+/* <----------------------------------------------> Detalles generales <----------------------------------------------> */
 
-/* Animations */
+/* Animación de secciones */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1651,60 +1659,56 @@ span {
 }
 
 .hero-container,
-.data-card {
-  /* animation: fadeIn 1s ease-out; */
+.showcase,
+.data,
+.section-container > .cta-important,
+.social-proof,
+.comparison,
+.faq,
+.final-cta {
+  animation: fadeIn 1s ease-out;
 }
 
-/* Scroll Animations */
-.scroll-reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: var(--transition-normal);
-}
+/* Indicador de progreso de desplazamiento */
 
-.scroll-reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Scroll Progress Indicator */
 .scroll-progress {
+  width: 100%;
+  height: 3px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--primary-100);
-  z-index: 1000;
-  transform-origin: 0 50%;
+  background: var(--green);
   transform: scaleX(0);
-  transition: transform 0.1s ease-out;
+  transform-origin: 0 50%;
+  z-index: 1000;
+  transition: var(--transition);
 }
 
 .scroll-progress::after {
+  width: 100px;
+  height: 100%;
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100%;
-  background: linear-gradient(to right, var(--primary-500), var(--primary-600));
+  background: linear-gradient(to right, var(--purple), var(--purple-dark));
   opacity: 0.5;
 }
 
-/* Back to Top Button */
+/* Botón para volver arriba */
+
 .back-to-top {
-  position: fixed;
-  bottom: var(--spacing-lg);
-  right: var(--spacing-lg);
   width: 48px;
   height: 48px;
-  background: var(--primary-500);
-  color: var(--white);
-  border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  color: var(--white);
+  background: var(--purple);
+  border-radius: var(--radius-full);
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -1721,48 +1725,16 @@ span {
 }
 
 .back-to-top:hover {
-  background: var(--primary-600);
+  background: var(--purple-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-xl);
 }
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: var(--spacing-md);
-    right: var(--spacing-md);
     width: 40px;
     height: 40px;
-  }
-}
-
-/* Update nav-right-buttons to accommodate language switcher */
-.nav-right-buttons {
-  display: flex;
-  gap: var(--spacing-lg);
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* Fade-in on scroll */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1),
-    transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-  will-change: opacity, transform;
-}
-.fade-in-section.visible {
-  opacity: 1;
-  transform: none;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
   }
 }
