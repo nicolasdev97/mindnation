@@ -32,14 +32,15 @@
   --shadow-xl-green: 0 20px 25px -5px rgba(0, 177, 163, 0.1),
     0 10px 10px -5px rgba(0, 177, 163, 0.4);
 
-  /* Transiciones */
+  /* Espaciado */
 
-  --transition: all 0.3s ease;
-  --transition-transform: transform 0.3 ease;
-  --transition-transform-color: transform 0.3s ease, color 0.3s ease;
-  --transition-opacity: opacity 0.3s ease;
-  --transition-opacity-visibility: opacity 0.5s ease, visibility 0.5s ease;
-  --transition-height-opacity: max-height 0.3s ease, opacity 0.3s ease;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 80px;
 
   /* Radio de borde */
 
@@ -49,14 +50,14 @@
   --radius-xl: 16px;
   --radius-full: 9999px;
 
-  /* Spacing */
+  /* Transiciones */
 
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
+  --transition: all 0.3s ease;
+  --transition-transform: transform 0.3 ease;
+  --transition-transform-color: transform 0.3s ease, color 0.3s ease;
+  --transition-opacity: opacity 0.3s ease;
+  --transition-opacity-visibility: opacity 0.5s ease, visibility 0.5s ease;
+  --transition-height-opacity: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 /* Base */
@@ -134,7 +135,7 @@ span {
   justify-content: center;
   height: 30px;
   width: max-content;
-  padding: 0 5px;
+  padding: 0 var(--spacing-xs);
   color: var(--white);
   font-weight: bold;
   font-size: 14px;
@@ -149,7 +150,7 @@ span {
 
 .cta-btn-midle {
   font-size: 18px;
-  padding: 25px 25px;
+  padding: var(--spacing-md);
   border-radius: var(--radius-md);
 }
 
@@ -163,7 +164,7 @@ span {
   background-color: var(--yellow);
   color: var(--gray-dark);
   font-size: 32px;
-  padding: 40px;
+  padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
 }
 
@@ -266,8 +267,8 @@ span {
 .language-btn-options li {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 5px;
+  gap: 8px;
+  padding: var(--spacing-xs);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -298,7 +299,7 @@ span {
   justify-content: center;
   width: 40px;
   height: 40px;
-  padding: 8px;
+  padding: var(--spacing-xs);
   font-size: 20px;
   background: transparent;
   border: none;
@@ -368,7 +369,7 @@ span {
 .hero {
   position: relative;
   height: calc(100vh - 80px);
-  margin-top: 80px;
+  margin-top: var(--spacing-3xl);
   background: #774e9d;
   background-size: cover;
   background-position: center;
@@ -394,7 +395,7 @@ span {
 /* Título de la sección de hero */
 
 .hero-container h1 {
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-md);
 }
 
 .hero-container h1 > span {
@@ -454,7 +455,7 @@ span {
 .hero-stat i {
   color: var(--yellow);
   font-size: 45px;
-  padding-right: 10px;
+  padding-right: var(--spacing-xs);
 }
 
 /* Texto (Número e información complementaria) de las estadísticas de la sección de hero */
@@ -533,7 +534,7 @@ span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 15px 0;
+    margin: var(--spacing-sm) 0;
   }
 
   /* Subtítulo de la sección de hero */
@@ -553,7 +554,7 @@ span {
 
   .hero-stats {
     width: 90%;
-    margin: 15px 0;
+    margin: var(--spacing-sm) 0;
     gap: 5px;
   }
 
@@ -619,7 +620,7 @@ span {
   /* Subtítulo de la sección de hero */
 
   .hero-container h3 {
-    padding-bottom: 45px;
+    padding-bottom: var(--spacing-lg);
   }
 }
 
@@ -788,9 +789,9 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
   color: var(--text);
   background: var(--white);
   border: 1px solid var(--border);
@@ -817,8 +818,8 @@ span {
 /* Punto individual de contenido del slider de la sección de showcase slider */
 
 .showcase-slider-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 8px;
+  height: 8px;
   background: #00b1a3;
   border: none;
   border-radius: var(--radius-full);
@@ -865,13 +866,13 @@ span {
   /* Título del texto de la diapositiva de la sección de showcase slider */
 
   .showcase-slide-info h3 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   /* Información complementaria del texto de la diapositiva de la sección de showcase slider */
 
   .showcase-slide-info p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   /* Control de anterior y siguiente del slider de la sección de showcase slider */
@@ -905,7 +906,7 @@ span {
 .data-card {
   background: #fff;
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: var(--spacing-md);
   text-align: center;
   border: 2px solid transparent;
   box-shadow: var(--shadow-xl);
@@ -1088,8 +1089,8 @@ span {
 .testimonial-card {
   width: 75%;
   border-radius: var(--radius-xl);
-  padding: 20px 40px;
-  margin-bottom: 15px;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  margin-bottom: var(--spacing-sm);
   background: var(--white);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
@@ -1107,7 +1108,7 @@ span {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-xs);
 }
 
 /* Imagen de autor de testimonio de la sección de empresas que confían */
@@ -1128,7 +1129,7 @@ span {
   opacity: 0.7;
   font-family: serif;
   line-height: 1;
-  padding-right: 35px;
+  padding-right: var(--spacing-lg);
 }
 
 /* Comentario de testimonio de la sección de empresas que confían */
@@ -1136,7 +1137,7 @@ span {
 .testimonial-card blockquote {
   display: flex;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: var(--spacing-xs);
   font-style: italic;
 }
 
@@ -1149,7 +1150,7 @@ span {
 }
 
 .social-proof > .section-container > div > a {
-  margin: 48px 0;
+  margin: var(--spacing-xl) 0;
 }
 
 /* <----------------------------------------------> Empresas que confían responsive <----------------------------------------------> */
@@ -1180,7 +1181,7 @@ span {
   /* Testimonio individual de la sección de empresas que confían */
 
   .testimonial-card {
-    padding: 10px 20px;
+    padding: var(--spacing-xs) var(--spacing-sm);
   }
 
   /* Autor de testimonio de la sección de empresas que confían */
@@ -1330,7 +1331,7 @@ span {
   align-items: center;
   justify-content: space-between;
   color: var(--gray-dark);
-  padding: 16px;
+  padding: var(--spacing-sm);
   border: none;
   border-radius: var(--radius-sm);
   background: transparent;
@@ -1476,7 +1477,7 @@ span {
 
 .footer .section-container h3 {
   font-size: 18px;
-  padding-bottom: 23px;
+  padding-bottom: var(--spacing-md);
 }
 
 .footer .section-container p,
@@ -1566,7 +1567,7 @@ span {
 .footer-col-2 i {
   font-size: 18px;
   padding-top: 2px;
-  padding-right: 15px;
+  padding-right: var(--spacing-sm);
 }
 
 .footer .section-container .footer-col-2-text > a {
@@ -1584,12 +1585,12 @@ span {
 /* Texto de la tercera columna del footer */
 
 .footer-col-3-column {
-  padding: 0 30px;
+  padding: 0 var(--spacing-lg);
 }
 
 .footer-col-3-column a {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: var(--spacing-sm);
   transition: var(--transition);
 }
 
@@ -1611,7 +1612,7 @@ span {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 15px;
+    padding: var(--spacing-sm);
   }
 
   /* Texto de las tres columnas */
@@ -1633,7 +1634,7 @@ span {
 
   .footer-col-1 img {
     width: 230px;
-    padding-bottom: 15px;
+    padding-bottom: var(--spacing-sm);
   }
 
   /* Icono de la segunda columna del footer */
