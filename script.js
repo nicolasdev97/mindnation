@@ -14,15 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     currentLang = lang;
 
     //Cambia el contenido de los elementos con atributos data-en, data-es, data-fr
-    document.querySelectorAll("[data-en][data-es][data-fr]").forEach((el) => {
+    document.querySelectorAll("[data-en][data-es]").forEach((el) => {
       el.innerHTML = el.getAttribute(`data-${lang}`);
     });
 
     //Cambia las etiquetas ARIA de accesibilidad si están definidas
     document
-      .querySelectorAll(
-        "[data-en-aria-label][data-es-aria-label][data-fr-aria-label]"
-      )
+      .querySelectorAll("[data-en-aria-label][data-es-aria-label]")
       .forEach((el) => {
         el.setAttribute(
           "aria-label",
