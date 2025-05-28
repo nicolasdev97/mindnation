@@ -1667,6 +1667,13 @@ span {
     justify-content: center;
   }
 
+  /* Logo de la primera columna del footer */
+
+  .footer-col-1 img {
+    width: 230px;
+    padding-bottom: 15px;
+  }
+
   /* Icono de la segunda columna del footer */
 
   .footer-col-2 i {
