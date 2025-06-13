@@ -1504,7 +1504,7 @@ span {
 
 .footer-col-1 img {
   width: 170px;
-  padding-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
 }
 
 /* Redes sociales de la primera columna del footer */
