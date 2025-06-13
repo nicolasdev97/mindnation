@@ -244,7 +244,6 @@ span {
 }
 
 .language-btn-selected img {
-  width: 20px;
   height: 20px;
   object-fit: cover;
 }
@@ -1246,7 +1245,7 @@ span {
 
 .comparison-table th,
 .comparison-table td {
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   padding: var(--spacing-md);
 }
@@ -1258,7 +1257,7 @@ span {
   top: 0;
   color: var(--white);
   font-weight: 600;
-  background: var(--green);
+  background: var(--purple);
 }
 
 /* Cuerpo de la tabla de comparación */
@@ -1505,6 +1504,7 @@ span {
 
 .footer-col-1 img {
   width: 170px;
+  padding-bottom: var(--spacing-sm);
 }
 
 /* Redes sociales de la primera columna del footer */
