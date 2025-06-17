@@ -1062,13 +1062,12 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: var(--spacing-xl) 0;
+  margin: var(--spacing-sm) 0;
 }
 
 .logos-grid img {
-  max-height: 48px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   display: block;
   margin: 0 auto;
   object-fit: contain;
@@ -1155,6 +1154,13 @@ span {
 /* <----------------------------------------------> Empresas que confían responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
+  /* Logos de empresas de la sección de empresas que confían */
+
+  .logos-grid img {
+    width: 60px;
+    height: 60px;
+  }
+
   /* Testimonios de la sección de empresas que confían */
 
   .testimonial-cards {
