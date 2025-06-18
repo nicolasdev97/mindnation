@@ -1,4 +1,4 @@
-/* <----------------------------------------------> Detecta cuándo un elemento entra en el viewport para aplicar una animación <----------------------------------------------> */
+/* <----------------------------------------------> Detects when an element enters the viewport to apply an animation <----------------------------------------------> */
 
 const observerOptions = {
   root: null,
@@ -21,7 +21,7 @@ document
     observer.observe(el);
   });
 
-/* <----------------------------------------------> Idioma de la página <----------------------------------------------> */
+/* <----------------------------------------------> Page language <----------------------------------------------> */
 
 document.addEventListener("DOMContentLoaded", function () {
   const select = document.querySelector(".language-btn-custom");
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/* <----------------------------------------------> Abre o cierra el menú móvil al hacer clic en el botón del menú <----------------------------------------------> */
+/* <----------------------------------------------> Open or close the mobile menu by clicking the menu button <----------------------------------------------> */
 
 const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 const navLinks = document.querySelector(".nav-right-buttons");
@@ -107,7 +107,7 @@ window.addEventListener("scroll", () => {
   scrollProgress.style.transform = `scaleX(${scrolled / 100})`;
 });
 
-/* <----------------------------------------------> Muestra un botón flotante para volver al inicio de la página <----------------------------------------------> */
+/* <----------------------------------------------> Displays a floating button to return to the top of the page <----------------------------------------------> */
 
 const backToTop = document.createElement("button");
 backToTop.className = "back-to-top";
@@ -129,7 +129,7 @@ backToTop.addEventListener("click", () => {
   });
 });
 
-/* <----------------------------------------------> Controlador del slider <----------------------------------------------> */
+/* <----------------------------------------------> Slider controller <----------------------------------------------> */
 
 const sliderTrack = document.querySelector(".showcase-slider-track");
 const slides = document.querySelectorAll(".showcase-slider-slide");
@@ -233,7 +233,7 @@ function handleSwipe() {
   }
 }
 
-/* <----------------------------------------------> Funcionalidad del FAQ <----------------------------------------------> */
+/* <----------------------------------------------> FAQ Functionality <----------------------------------------------> */
 
 document.addEventListener("DOMContentLoaded", function () {
   const faqItems = document.querySelectorAll(".faq-item");
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* <----------------------------------------------> Funcionalidad del FAQ <----------------------------------------------> */
+/* <----------------------------------------------> FAQ Functionality <----------------------------------------------> */
 
 document.addEventListener("DOMContentLoaded", function () {
   const faqItems = document.querySelectorAll(".faq-item");
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* <----------------------------------------------> Funcionalidad del FAQ <----------------------------------------------> */
+/* <----------------------------------------------> FAQ Functionality <----------------------------------------------> */
 
 document.addEventListener("DOMContentLoaded", function () {
   const faqItems = document.querySelectorAll(".faq-item");

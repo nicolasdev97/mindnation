@@ -1,7 +1,7 @@
 /* <----------------------------------------------> Variables <----------------------------------------------> */
 
 :root {
-  /* Colores */
+  /* Colors */
 
   --white: #ffffff;
   --gray-light: #f5f5f5;
@@ -18,7 +18,7 @@
   --blue: #0080ca;
   --blue--dark: #0065a0;
 
-  /* Sombras */
+  /* Shadows */
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -32,7 +32,7 @@
   --shadow-xl-green: 0 20px 25px -5px rgba(0, 177, 163, 0.1),
     0 10px 10px -5px rgba(0, 177, 163, 0.4);
 
-  /* Espaciado */
+  /* Spacing */
 
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -42,7 +42,7 @@
   --spacing-2xl: 64px;
   --spacing-3xl: 80px;
 
-  /* Radio de borde */
+  /* Edge radius */
 
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -50,7 +50,7 @@
   --radius-xl: 16px;
   --radius-full: 9999px;
 
-  /* Transiciones */
+  /* Transitions */
 
   --transition: all 0.3s ease;
   --transition-transform: transform 0.3 ease;
@@ -60,7 +60,7 @@
   --transition-height-opacity: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-/* <----------------------------------------------> Ajustes generales de la página <----------------------------------------------> */
+/* <----------------------------------------------> General page settings <----------------------------------------------> */
 
 * {
   margin: 0;
@@ -78,7 +78,7 @@ body {
   background-color: var(--gray--light);
 }
 
-/* Tamaño de letras */
+/* Font size */
 
 h1,
 h2,
@@ -91,35 +91,35 @@ h6 {
   line-height: 1.2;
 }
 
-/* Título grande */
+/* Large title */
 
 h1 {
   font-size: clamp(50px, 5vw, 70px);
   letter-spacing: -0.3px;
 }
 
-/* Título normal */
+/* Normal title */
 
 h2 {
   font-size: clamp(32px, 4vw, 40px);
   letter-spacing: -0.2px;
 }
 
-/* Título pequeño */
+/* Small title */
 
 h3 {
   font-size: clamp(24px, 3vw, 32px);
   letter-spacing: -0.1px;
 }
 
-/* Texto */
+/* Text */
 
 p,
 span {
   color: var(--gray-dark);
 }
 
-/* Contenedor de cada sección */
+/* Container of each section */
 
 .section-container {
   max-width: 1200px;
@@ -127,7 +127,7 @@ span {
   padding: var(--spacing-xl) var(--spacing-md);
 }
 
-/* Botón de cta */
+/* CTA button */
 
 .cta-btn {
   display: flex;
@@ -172,7 +172,7 @@ span {
   background-color: var(--yellow-dark);
 }
 
-/* Título de cada sección */
+/* Title of each section */
 
 .section-container > h2 {
   text-align: center;
@@ -201,7 +201,7 @@ span {
   height: 100%;
 }
 
-/* Seccion izquierda del navbar */
+/* Left section of the navbar */
 
 .nav-left {
   display: flex;
@@ -209,7 +209,7 @@ span {
   gap: 10px;
 }
 
-/* Logo de Mindnation */
+/* Mindnation logo */
 
 .logo img {
   display: block;
@@ -217,13 +217,13 @@ span {
   width: auto;
 }
 
-/* Botón de idiomas */
+/* Language button */
 
 .language-btn-custom {
   position: relative;
 }
 
-/* Idioma seleccionado */
+/* Selected language */
 
 .language-btn-selected {
   height: 30px;
@@ -248,7 +248,7 @@ span {
   object-fit: cover;
 }
 
-/* Opciones de idiomas */
+/* Language options */
 
 .language-btn-options {
   position: absolute;
@@ -282,7 +282,7 @@ span {
   object-fit: cover;
 }
 
-/* Sección derecha del navbar */
+/* Right section of the navbar */
 
 .nav-right-buttons {
   display: flex;
@@ -290,7 +290,7 @@ span {
   gap: var(--spacing-lg);
 }
 
-/* Menu móvil del navbar */
+/* Mobile navbar menu */
 
 .mobile-menu-btn {
   display: none;
@@ -314,7 +314,7 @@ span {
 /* <----------------------------------------------> Navbar responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
-  /* Botón de idiomas */
+  /* Language button */
 
   .language-btn-selected span {
     display: none;
@@ -324,13 +324,13 @@ span {
     width: max-content;
   }
 
-  /* Menu móvil del navbar */
+  /* Mobile navbar menu */
 
   .mobile-menu-btn {
     display: flex;
   }
 
-  /* Botones dentro del menú móvil del navbar */
+  /* Buttons within the mobile navbar menu */
 
   .nav-right-buttons {
     height: calc(100vh - 80px);
@@ -356,7 +356,7 @@ span {
     visibility: visible;
   }
 
-  /* Boton de cta de navbar */
+  /* Navbar account button */
 
   .cta-btn {
     width: 100%;
@@ -380,7 +380,7 @@ span {
   width: 100%;
 }
 
-/* Textos de la sección de hero */
+/* Texts from the hero section */
 
 .hero-container h1,
 .hero-container h3,
@@ -389,9 +389,7 @@ span {
   text-align: left;
 }
 
-/* Texto superior pequeño de la sección de hero */
-
-/* Título de la sección de hero */
+/* Hero section title */
 
 .hero-container h1 {
   margin-bottom: var(--spacing-md);
@@ -401,14 +399,14 @@ span {
   color: #ffd54f;
 }
 
-/* Hero dividido en dos secciones para texto e imagen */
+/* Hero divided into two sections for text and image */
 
 .hero-division {
   display: flex;
   flex-direction: row;
 }
 
-/* Sección izquierda de la sección de hero */
+/* Left section of the hero section */
 
 .hero-division-left {
   display: flex;
@@ -419,7 +417,7 @@ span {
   gap: var(--spacing-sm);
 }
 
-/* Subtítulo de la sección de hero */
+/* Hero section caption */
 
 .hero-container h3 {
   font-weight: normal;
@@ -430,9 +428,9 @@ span {
   font-weight: bold;
 }
 
-/* Botón de cta de la sección de hero (Mirar en los ajustes generales "cta-btn" y "cta-btn-big") */
+/* Hero section CTA button (Look in the general settings "cta-btn" and "cta-btn-big") */
 
-/* Estadísticas de la sección de hero */
+/* Hero section statistics */
 
 .hero-stats {
   min-width: 400px;
@@ -443,13 +441,13 @@ span {
   gap: var(--spacing-xl);
 }
 
-/* Estadística individual de la sección de hero */
+/* Individual statistics of the hero section */
 
 .hero-stat {
   display: flex;
 }
 
-/* Icono de las estadísticas de la sección de hero */
+/* Hero section statistics icon */
 
 .hero-stat i {
   color: var(--yellow);
@@ -457,7 +455,7 @@ span {
   padding-right: var(--spacing-xs);
 }
 
-/* Texto (Número e información complementaria) de las estadísticas de la sección de hero */
+/* Text (Number and additional information) of the hero section statistics */
 
 .hero-stat-text h2,
 .hero-stat-text p {
@@ -467,17 +465,13 @@ span {
   color: var(--white);
 }
 
-/* Número en el texto de las estadísticas de la sección de hero */
-
-/* Información complementaria del texto de las estadísticas de la sección de hero */
-
-/* Sección derecha de la sección de hero */
+/* Right section of the hero section */
 
 .hero-division-right {
   position: relative;
 }
 
-/* Imagen de la sección de hero */
+/* Image from the hero section */
 
 .hero-division-right img {
   width: 350px;
@@ -493,7 +487,7 @@ span {
     padding: var(--spacing-md) 0;
   }
 
-  /* Textos del hero */
+  /* Texts of the hero */
 
   .hero-container h1,
   .hero-container h2,
@@ -502,20 +496,20 @@ span {
     text-align: center;
   }
 
-  /* Texto superior pequeño de la sección de hero */
+  /* Small top text of the hero section */
 
   .hero-container p {
     font-size: 14px;
   }
 
-  /* Título de la sección de hero */
+  /* Hero section title */
 
   .hero-container h1 {
     font-size: 50px;
     margin: 0;
   }
 
-  /* Hero dividido en dos secciones para texto e imagen */
+  /* Hero divided into two sections for text and image */
 
   .hero-division {
     display: flex;
@@ -524,7 +518,7 @@ span {
     align-items: center;
   }
 
-  /* Sección izquierda de la sección de hero */
+  /* Left section of the hero section */
 
   .hero-division-left,
   .hero-division-right {
@@ -536,20 +530,20 @@ span {
     margin: var(--spacing-sm) 0;
   }
 
-  /* Subtítulo de la sección de hero */
+  /* Hero section caption */
 
   .hero-container h3 {
     font-size: 20px;
   }
 
-  /* Botón de cta de la sección de hero */
+  /* Hero section CTA button */
 
   .cta-btn-big {
     font-size: 24px;
     width: 90%;
   }
 
-  /* Estadísticas de la sección de hero */
+  /* Hero section statistics */
 
   .hero-stats {
     width: 90%;
@@ -563,20 +557,20 @@ span {
     gap: 5px;
   }
 
-  /* Icono de las estadísticas de la sección de hero */
+  /* Hero section statistics icon */
 
   .hero-stat i {
     padding: 0;
   }
 
-  /* Texto (Número e información complementaria) de las estadísticas de la sección de hero */
+  /* Text (Number and additional information) of the hero section statistics */
 
   .hero-stat i,
   .hero-stat-text h2 {
     font-size: 30px;
   }
 
-  /* Imagen de la sección de hero */
+  /* Image from the hero section */
 
   .hero-division-right img {
     width: 150px;
@@ -584,25 +578,25 @@ span {
 }
 
 @media (max-width: 480px) {
-  /* Título de la sección de hero */
+  /* Hero section title */
 
   .hero-container h1 {
     font-size: 30px;
   }
 
-  /* Subtítulo de la sección de hero */
+  /* Hero section caption */
 
   .hero-container h3 {
     font-size: 18px;
   }
 
-  /* Número en el texto de las estadísticas de la sección de hero */
+  /* Number in the text of the hero section statistics */
 
   .hero-stat-text h2 {
     font-size: 33px;
   }
 
-  /* Información complementaria del texto de las estadísticas de la sección de hero */
+  /* Supplementary information to the text of the hero section statistics */
 
   .hero-stat-text p {
     font-size: 12px;
@@ -610,13 +604,13 @@ span {
 }
 
 @media (max-height: 750px) {
-  /* Imagen de la sección de hero */
+  /* Image from the hero section */
 
   .hero-division-right img {
     display: none;
   }
 
-  /* Subtítulo de la sección de hero */
+  /* Hero section caption */
 
   .hero-container h3 {
     padding-bottom: var(--spacing-lg);
@@ -631,9 +625,9 @@ span {
   overflow: hidden;
 }
 
-/* Título de la sección de showcase slider (Ver ajustes generales) */
+/* Showcase Slider Section Title (See General Settings) */
 
-/* Slider de la sección de showcase slider */
+/* Showcase slider section slider */
 
 .showcase-slider {
   position: relative;
@@ -644,7 +638,7 @@ span {
   box-shadow: var(--shadow-xl);
 }
 
-/* Borde colorido del slider de la sección de showcase slider */
+/* Colorful border of the showcase slider section slider */
 
 .showcase-slider-top-border {
   position: absolute;
@@ -668,7 +662,7 @@ span {
   z-index: 10;
 }
 
-/* Todas las diapositivas de la sección de showcase slider */
+/* All slides in the showcase slider section */
 
 .showcase-slider-track {
   display: flex;
@@ -676,7 +670,7 @@ span {
   width: 100%;
 }
 
-/* Diapositiva individual de la sección de showcase slider */
+/* Individual slide from the showcase slider section */
 
 .showcase-slider-slide {
   min-width: 100%;
@@ -695,7 +689,7 @@ span {
   position: relative;
 }
 
-/* Contenido de la diapositiva de la sección de showcase slider */
+/* Slide content of the showcase slider section */
 
 .showcase-slide-content {
   display: grid;
@@ -707,7 +701,7 @@ span {
   border-radius: var(--radius-xl);
 }
 
-/* Imagen de la diapositiva de la sección de showcase slider */
+/* Image of the showcase slider section slide */
 
 .showcase-slide-image {
   position: relative;
@@ -729,7 +723,7 @@ span {
   transform: scale(1.02);
 }
 
-/* Video de la diapositiva de la sección de showcase slider */
+/* Video of the showcase slider section slide */
 
 .showcase-slide-video {
   height: 0;
@@ -751,27 +745,27 @@ span {
   border-radius: var(--radius-xl);
 }
 
-/* Texto de la diapositiva de la sección de showcase slider */
+/* Slide text for the showcase slider section */
 
 .showcase-slide-info {
   padding: var(--spacing-lg);
 }
 
-/* Título del texto de la diapositiva de la sección de showcase slider */
+/* Title text of the showcase slider section slide */
 
 .showcase-slide-info h3 {
   font-size: 32px;
   margin-bottom: var(--spacing-md);
 }
 
-/* Información complementaria del texto de la diapositiva de la sección de showcase slider */
+/* Supplementary information to the slide text in the showcase slider section */
 
 .showcase-slide-info p {
   font-size: 18px;
   line-height: 1.6;
 }
 
-/* Controles del slider de la sección de showcase slider */
+/* Slider controls in the showcase slider section */
 
 .showcase-slider-controls {
   display: flex;
@@ -781,7 +775,7 @@ span {
   margin-top: var(--spacing-lg);
 }
 
-/* Control de anterior y siguiente del slider de la sección de showcase slider */
+/* Previous and next control of the slider in the showcase slider section */
 
 .showcase-slider-prev,
 .showcase-slider-next {
@@ -807,14 +801,14 @@ span {
   box-shadow: var(--shadow-lg);
 }
 
-/* Puntos de contenido del slider de la sección de showcase slider */
+/* Content points of the showcase slider section slider */
 
 .showcase-slider-dots {
   display: flex;
   gap: var(--spacing-sm);
 }
 
-/* Punto individual de contenido del slider de la sección de showcase slider */
+/* Individual slider content point of the showcase slider section */
 
 .showcase-slider-dot {
   width: 8px;
@@ -836,14 +830,14 @@ span {
 /* <----------------------------------------------> Showcase slider responsive <----------------------------------------------> */
 
 @media (max-width: 1024px) {
-  /* Contenido de la diapositiva de la sección de showcase slider */
+  /* Slide content of the showcase slider section */
 
   .showcase-slide-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
   }
 
-  /* Texto de la diapositiva de la sección de showcase slider */
+  /* Slide text for the showcase slider section */
 
   .showcase-slide-info {
     text-align: center;
@@ -856,25 +850,25 @@ span {
     padding: var(--spacing-lg) 0;
   }
 
-  /* Contenido de la diapositiva de la sección de showcase slider */
+  /* Slide content of the showcase slider section */
 
   .showcase-slide-content {
     padding: var(--spacing-md);
   }
 
-  /* Título del texto de la diapositiva de la sección de showcase slider */
+  /* Title text of the showcase slider section slide */
 
   .showcase-slide-info h3 {
     font-size: 24px;
   }
 
-  /* Información complementaria del texto de la diapositiva de la sección de showcase slider */
+  /* Supplementary information to the slide text in the showcase slider section */
 
   .showcase-slide-info p {
     font-size: 16px;
   }
 
-  /* Control de anterior y siguiente del slider de la sección de showcase slider */
+  /* Previous and next control of the slider in the showcase slider section */
 
   .showcase-slider-prev,
   .showcase-slider-next {
@@ -883,15 +877,15 @@ span {
   }
 }
 
-/* <----------------------------------------------> Datos (Problemas y Soluciones) <----------------------------------------------> */
+/* <----------------------------------------------> Data (Problems and solutions) <----------------------------------------------> */
 
 .data {
   background: var(--white);
 }
 
-/* Título de la sección de datos (Problemas y soluciones) (Ver ajustes generales) */
+/* Data section title (Problems and solutions) (See general settings) */
 
-/* Cartas de la sección de datos (Problemas y soluciones) */
+/* Data section letters (Problems and solutions) */
 
 .data-cards {
   display: grid;
@@ -900,7 +894,7 @@ span {
   margin-top: var(--spacing-xl);
 }
 
-/* Carta individual de la sección de datos (Problemas y soluciones) */
+/* Individual letter from the data section (Problems and solutions) */
 
 .data-card {
   background: #fff;
@@ -924,7 +918,7 @@ span {
   border-color: var(--green);
 }
 
-/* Icono de la carta de la sección de datos (Problemas y soluciones) */
+/* Data section letter icon (Problems and solutions) */
 
 .data-card-image {
   position: relative;
@@ -944,13 +938,13 @@ span {
   transition: var(--transition-opacity);
 }
 
-/* Icono por defecto de la carta de la sección de datos (Problemas y soluciones) */
+/* Default icon for the data section letter (Problems and solutions) */
 
 .data-card:hover .data-card-image-default {
   opacity: 0;
 }
 
-/* Icono al hacer hover de la carta de la sección de datos (Problemas y soluciones) */
+/* Icon when hovering over the data section card (Problems and solutions) */
 
 .data-card-image-hover {
   opacity: 0;
@@ -960,7 +954,7 @@ span {
   opacity: 1;
 }
 
-/* Título de la carta de la sección de datos (Problemas y soluciones) */
+/* Title of the data section letter (Problems and solutions) */
 
 .data-card-title {
   position: relative;
@@ -983,7 +977,7 @@ span {
   transform: scale(1.1);
 }
 
-/* Información complementaria de la carta de la sección de datos (Problemas y soluciones) */
+/* Supplementary information to the letter in the data section (Problems and solutions) */
 
 .data-card p {
   transition: var(--transition-transform-color);
@@ -998,10 +992,10 @@ span {
   font-weight: bolder;
 }
 
-/* <----------------------------------------------> Datos responsive (Problemas y Soluciones) <----------------------------------------------> */
+/* <----------------------------------------------> Data responsive (Problems and solutions) <----------------------------------------------> */
 
 @media (max-width: 768px) {
-  /* Cartas de la sección de datos (Problemas y soluciones) */
+  /* Data section letters (Problems and solutions) */
 
   .data-cards {
     grid-template-columns: 1fr;
@@ -1009,7 +1003,7 @@ span {
   }
 }
 
-/* <----------------------------------------------> Cta importante <----------------------------------------------> */
+/* <----------------------------------------------> CTA important <----------------------------------------------> */
 
 .cta-important {
   width: 60%;
@@ -1026,14 +1020,14 @@ span {
   background-color: #774e9d;
 }
 
-/* Texto de sección de cta importante */
+/* Important CTA section text */
 
 .cta-important h2,
 .cta-important p {
   color: var(--white);
 }
 
-/* <----------------------------------------------> Cta importante responsive <----------------------------------------------> */
+/* <----------------------------------------------> CTA important responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
   .cta-important {
@@ -1048,15 +1042,15 @@ span {
   }
 }
 
-/* <----------------------------------------------> Empresas que confían <----------------------------------------------> */
+/* <----------------------------------------------> Companies that trust <----------------------------------------------> */
 
 .social-proof {
   background: var(--gray);
 }
 
-/* Título de la sección de empresas que confían (Ver ajustes generales) */
+/* Title of the companies that trust section (See general settings) */
 
-/* Logos de empresas de la sección de empresas que confían */
+/* Company logos from the companies that trust section */
 
 .logos-grid {
   display: flex;
@@ -1073,7 +1067,7 @@ span {
   object-fit: contain;
 }
 
-/* Testimonios de la sección de empresas que confían */
+/* Testimonials from the companies that trust section */
 
 .testimonial-cards {
   display: flex;
@@ -1082,7 +1076,7 @@ span {
   justify-content: center;
 }
 
-/* Testimonio individual de la sección de empresas que confían */
+/* Individual testimony from the section of companies that trust */
 
 .testimonial-card {
   width: 75%;
@@ -1099,7 +1093,7 @@ span {
   box-shadow: var(--shadow-xl);
 }
 
-/* Autor de testimonio de la sección de empresas que confían */
+/* Author of the testimonial from the companies that trust section */
 
 .testimonial-author {
   display: flex;
@@ -1109,7 +1103,7 @@ span {
   margin-bottom: var(--spacing-xs);
 }
 
-/* Imagen de autor de testimonio de la sección de empresas que confían */
+/* Image of author's testimonial from the companies that trust section */
 
 .testimonial-author img {
   width: 60px;
@@ -1118,7 +1112,7 @@ span {
   border-radius: var(--radius-full);
 }
 
-/* Icono de quote de testimonio de la sección de empresas que confían */
+/* Testimonial quote icon from the companies that trust section */
 
 .testimonial-card > blockquote::before {
   content: '"';
@@ -1130,7 +1124,7 @@ span {
   padding-right: var(--spacing-lg);
 }
 
-/* Comentario de testimonio de la sección de empresas que confían */
+/* Testimonial comment from the companies that trust section */
 
 .testimonial-card blockquote {
   display: flex;
@@ -1139,7 +1133,7 @@ span {
   font-style: italic;
 }
 
-/* Sección de cta menor */
+/* Minor CTA section */
 
 .social-proof > .section-container > div {
   display: flex;
@@ -1151,30 +1145,30 @@ span {
   margin: var(--spacing-xl) 0;
 }
 
-/* <----------------------------------------------> Empresas que confían responsive <----------------------------------------------> */
+/* <----------------------------------------------> Companies that trust responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
-  /* Logos de empresas de la sección de empresas que confían */
+  /* Company logos from the ccmpanies that trust section */
 
   .logos-grid img {
     width: 60px;
     height: 60px;
   }
 
-  /* Testimonios de la sección de empresas que confían */
+  /* Testimonials from the companies that trust section */
 
   .testimonial-cards {
     width: 90%;
     margin: auto;
   }
 
-  /* Testimonio individual de la sección de empresas que confían */
+  /* Individual testimony from the section of companies that trust */
 
   .testimonial-card {
     width: 100%;
   }
 
-  /* Imagen de autor de testimonio de la sección de empresas que confían */
+  /* Image of author's testimonial from the companies that trust section */
 
   .testimonial-author img {
     width: 50px;
@@ -1183,39 +1177,39 @@ span {
 }
 
 @media (max-width: 480px) {
-  /* Testimonio individual de la sección de empresas que confían */
+  /* Individual testimony from the section of companies that trust */
 
   .testimonial-card {
     padding: var(--spacing-xs) var(--spacing-sm);
   }
 
-  /* Autor de testimonio de la sección de empresas que confían */
+  /* Author of the testimonial from the companies that trust section */
 
   .testimonial-author {
     justify-content: center;
   }
 
-  /* Imagen de autor de testimonio de la sección de empresas que confían */
+  /* Image of author's testimonial from the companies that trust section */
 
   .testimonial-author img {
     display: none;
   }
 
-  /* Icono de quote de testimonio de la sección de empresas que confían */
+  /* Testimonial quote icon from the companies that trust section */
 
   .testimonial-card > blockquote::before {
     content: none;
     display: none;
   }
 
-  /* Texto de autor de testimonio de la sección de empresas que confían */
+  /* Author's testimonial text from the companies that trust section */
 
   .testimonial-author h3,
   .testimonial-author p {
     text-align: center;
   }
 
-  /* Comentario de testimonio de la sección de empresas que confían */
+  /* Testimonial comment from the companies that trust section */
 
   .testimonial-card blockquote {
     text-align: justify;
@@ -1223,7 +1217,7 @@ span {
   }
 }
 
-/* <----------------------------------------------> Comparación <----------------------------------------------> */
+/* <----------------------------------------------> Comparison <----------------------------------------------> */
 
 .comparison-table {
   display: flex;
@@ -1236,9 +1230,9 @@ span {
   box-shadow: var(--shadow-md);
 }
 
-/* Título de la sección de comparación (Ver ajustes generales) */
+/* Comparison section title (See general settings) */
 
-/* Tabla de comparación */
+/* Comparison table */
 
 .comparison-table table {
   width: 100%;
@@ -1247,7 +1241,7 @@ span {
   border-spacing: 0;
 }
 
-/* Filas y columnas de la tabla de comparación */
+/* Comparison table rows and columns */
 
 .comparison-table th,
 .comparison-table td {
@@ -1256,7 +1250,7 @@ span {
   padding: var(--spacing-md);
 }
 
-/* Encabezado de la tabla de comparación */
+/* Comparison table header */
 
 .comparison-table th {
   position: sticky;
@@ -1266,7 +1260,7 @@ span {
   background: var(--purple);
 }
 
-/* Cuerpo de la tabla de comparación */
+/* Body of the comparison table */
 
 .comparison-table td {
   padding: var(--spacing-md);
@@ -1282,14 +1276,14 @@ span {
   background: var(--gray);
 }
 
-/* <----------------------------------------------> Comparación responsive <----------------------------------------------> */
+/* <----------------------------------------------> Comparison responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
   .comparison-table {
     margin: var(--spacing-lg) -20px;
   }
 
-  /* Filas y columnas de la tabla de comparación */
+  /* Comparison table rows and columns */
 
   .comparison-table td,
   .comparison-table th {
@@ -1298,25 +1292,25 @@ span {
   }
 }
 
-/* <----------------------------------------------> Faq <----------------------------------------------> */
+/* <----------------------------------------------> FAQ <----------------------------------------------> */
 
-/* Título de la sección de comparación (Ver ajustes generales) */
+/* FAQ section title (See general settings) */
 
-/* Texto de la sección de faq */
+/* FAQ section text */
 
 .faq-header {
   text-align: center;
   margin-bottom: var(--spacing-lg);
 }
 
-/* Preguntas de la sección de faq */
+/* FAQ section questions */
 
 .faq-grid {
   max-width: 800px;
   margin: var(--spacing-xl) auto 0;
 }
 
-/* Pregunta individual de la sección de faq */
+/* Individual question from the FAQ section */
 
 .faq-item {
   border-bottom: 1px solid var(--gray);
@@ -1328,7 +1322,7 @@ span {
   border-bottom: none;
 }
 
-/* Contenido de la pregunta individual de la sección de faq */
+/* Content of the individual question in the FAQ section */
 
 .faq-question {
   width: 100%;
@@ -1348,7 +1342,7 @@ span {
   color: var(--green);
 }
 
-/* Título de la pregunta individual de la sección de faq */
+/* Title of the individual question in the FAQ section */
 
 .faq-question h3 {
   font-size: 18px;
@@ -1356,7 +1350,7 @@ span {
   transition: var(--transition);
 }
 
-/* Flecha abajo de la pregunta individual de la sección de faq */
+/* Arrow down to the individual question in the FAQ section */
 
 .faq-question i {
   font-size: 20px;
@@ -1373,7 +1367,7 @@ span {
   transform: rotate(180deg);
 }
 
-/* Respuesta de la pregunta individual de la sección de faq */
+/* Answer to the individual question from the FAQ section */
 
 .faq-answer {
   max-height: 0;
@@ -1389,23 +1383,23 @@ span {
   padding: var(--spacing-md);
 }
 
-/* <----------------------------------------------> Faq responsive <----------------------------------------------> */
+/* <----------------------------------------------> FAQ responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
-  /* Título de la pregunta individual de la sección de faq */
+  /* Title of the individual question in the FAQ section */
 
   .faq-question h3 {
     font-size: 16px;
   }
 
-  /* Respuesta de la pregunta individual de la sección de faq */
+  /* Answer to the individual question from the FAQ section */
 
   .faq-answer {
     padding-left: var(--spacing-sm);
   }
 }
 
-/* <----------------------------------------------> Cta final <----------------------------------------------> */
+/* <----------------------------------------------> Final CTA <----------------------------------------------> */
 
 .final-cta {
   padding: var(--spacing-xl) 0;
@@ -1422,9 +1416,9 @@ span {
   width: 100%;
 }
 
-/* Título de la sección de cta final (Ver ajustes generales) */
+/* Final CTA section title (See general settings) */
 
-/* Textos de la sección de comparación */
+/* Texts from the final CTA section*/
 
 .final-cta h2,
 .final-cta p,
@@ -1432,7 +1426,7 @@ span {
   color: var(--white);
 }
 
-/* Botón de cta de sección de cta final */
+/* Final CTA section CTA button */
 
 .final-cta .cta-btn {
   background: var(--purple);
@@ -1442,7 +1436,7 @@ span {
   background: var(--purple-dark);
 }
 
-/* Texto de sección de cta final */
+/* Final CTA section text */
 
 .final-cta p {
   margin: var(--spacing-sm) 0;
@@ -1463,7 +1457,7 @@ span {
   max-width: 1300px;
 }
 
-/* Columnas del footer */
+/* Footer columns */
 
 .footer-col-1,
 .footer-col-2 {
@@ -1478,7 +1472,7 @@ span {
   justify-content: flex-end;
 }
 
-/* Texto de las tres columnas */
+/* Text of the three columns */
 
 .footer .section-container h3 {
   font-size: 18px;
@@ -1504,16 +1498,16 @@ span {
   text-decoration: none;
 }
 
-/* Primera columna del footer */
+/* First column of the footer */
 
-/* Logo de la primera columna del footer */
+/* Logo of the first column of the footer */
 
 .footer-col-1 img {
   width: 170px;
   padding-bottom: var(--spacing-xs);
 }
 
-/* Redes sociales de la primera columna del footer */
+/* Social networks in the first column of the footer */
 
 .footer-social {
   display: flex;
@@ -1559,16 +1553,16 @@ span {
   transform: translateY(-2px);
 }
 
-/* Segunda columna del footer */
+/* Second column of the footer */
 
-/* Información de la segunda columna del footer */
+/* Information from the second column of the footer */
 
 .footer-col-2-info {
   display: flex;
   flex-direction: row;
 }
 
-/* Icono de la segunda columna del footer */
+/* Icon in the second column of the footer */
 
 .footer-col-2 i {
   font-size: 18px;
@@ -1586,9 +1580,9 @@ span {
   color: var(--blue);
 }
 
-/* Tercera columna del footer */
+/* Third column of the footer */
 
-/* Texto de la tercera columna del footer */
+/* Text from the third column of the footer */
 
 .footer-col-3-column {
   padding: 0 var(--spacing-lg);
@@ -1608,7 +1602,7 @@ span {
 /* <----------------------------------------------> Footer responsive <----------------------------------------------> */
 
 @media (max-width: 768px) {
-  /* Columnas del footer */
+  /* Footer columns */
 
   .footer-col-1,
   .footer-col-2,
@@ -1621,7 +1615,7 @@ span {
     padding: var(--spacing-sm);
   }
 
-  /* Texto de las tres columnas */
+  /* Text of the three columns */
 
   .footer .section-container h3 {
     font-size: 22px;
@@ -1636,23 +1630,23 @@ span {
     justify-content: center;
   }
 
-  /* Logo de la primera columna del footer */
+  /* Logo of the first column of the footer */
 
   .footer-col-1 img {
     width: 230px;
     padding-bottom: var(--spacing-sm);
   }
 
-  /* Icono de la segunda columna del footer */
+  /* Icon in the second column of the footer */
 
   .footer-col-2 i {
     display: none;
   }
 }
 
-/* <----------------------------------------------> Complementos generales de la página <----------------------------------------------> */
+/* <----------------------------------------------> General page add-ons <----------------------------------------------> */
 
-/* Animación de secciones */
+/* Sections animation */
 
 @keyframes fadeIn {
   from {
@@ -1676,7 +1670,7 @@ span {
   animation: fadeIn 1s ease-out;
 }
 
-/* Indicador de progreso de desplazamiento */
+/* Scrolling progress indicator */
 
 .scroll-progress {
   width: 100%;
@@ -1702,7 +1696,7 @@ span {
   opacity: 0.5;
 }
 
-/* Botón para volver arriba */
+/* Back to top button */
 
 .back-to-top {
   width: 48px;
