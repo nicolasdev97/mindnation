@@ -1,0 +1,68 @@
+<---------------> MINDNATION WEBSITE DOCUMENTATION <--------------->
+
+<-------------------------> HTML and CSS <------------------------->
+
+The HTML and CSS file is clearly commented section by section,
+making it easy for any developer to read, understand, and maintain.
+Each content block is properly identified through inline comments,
+allowing you to locate and understand its purpose within the page.
+
+The sections are organized in the following order:
+
+Navbar – Main navigation bar.
+
+Hero Section – Visual header with the primary message.
+
+Showcase Slider Section – Image carousel highlighting platform
+features.
+
+Data Section (Problems) – Highlights common mental health
+challenges.
+
+Data Section (Solutions) – Showcases how MindNation addresses those
+challenges.
+
+Important CTA Section – Prominent call-to-action to learn more.
+
+Companies that trust us – Displays logos of client companies.
+
+Comparison Section – Feature or benefit comparison.
+
+FAQ Section – Frequently Asked Questions with interactive behavior.
+
+Final CTA Section – Final call-to-action to schedule a demo.
+
+Footer – Footer with contact info, support, and social media links.
+
+Thanks to this internal documentation, any team member can quickly
+understand the structure and purpose of each section on the site.
+
+<--------------------------> Javascript <-------------------------->
+
+The JavaScript file is thoroughly commented function by function,
+ensuring clarity and maintainability for developers. Each block of
+code is annotated to explain its purpose and how it contributes to
+the interactive behavior of the site.
+
+The file includes the following main functionalities:
+
+Detects when an element enters the viewport to apply an
+animation – Used for scroll-based animations.
+
+Page language – Handles multilingual switching using data
+attributes.
+
+Open or close the mobile menu by clicking the menu button – Toggles
+the responsive navigation menu.
+
+Displays a floating button to return to the top of the
+page – Scrolls smoothly back to the top.
+
+Slider controller – Controls the behavior of the image
+carousel/slider.
+
+FAQ Functionality – Expands and collapses questions and answers
+interactively.
+
+Each function is clearly separated and commented to ease future
+edits or integrations.
