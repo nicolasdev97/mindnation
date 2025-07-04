@@ -111,7 +111,8 @@ window.addEventListener("scroll", () => {
 
 const backToTop = document.createElement("button");
 backToTop.className = "back-to-top";
-backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+backToTop.innerHTML =
+  '<i class="fas fa-arrow-up"></i><span class="back-to-top-tooltip" data-en="Back to top" data-es="Volver arriba">Volver arriba</span>';
 document.body.appendChild(backToTop);
 
 window.addEventListener("scroll", () => {
@@ -127,6 +128,22 @@ backToTop.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+/* <----------------------------------------------> Displays a floating button that sends a message <----------------------------------------------> */
+
+const whatsAppMessage = document.createElement("button");
+whatsAppMessage.className = "whatsapp-message";
+whatsAppMessage.innerHTML =
+  '<i class="fa-brands fa-whatsapp"></i><span class="whatsapp-tooltip" data-en="Chat with us on WhatsApp" data-es="Chatea con nosotros por WhatsApp">Chatea con nosotros por WhatsApp</span>';
+document.body.appendChild(whatsAppMessage);
+
+whatsAppMessage.addEventListener("click", () => {
+  const phone = "573114928630";
+  const message =
+    "Buenos días, estoy interesado en conocer más sobre sus servicios.";
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
 });
 
 /* <----------------------------------------------> Slider controller <----------------------------------------------> */
