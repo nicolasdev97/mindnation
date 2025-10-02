@@ -62,6 +62,26 @@
   --transition-height-opacity: max-height 0.3s ease, opacity 0.3s ease;
 }
 
+/* <------------------------------------------------------> Fonts <------------------------------------------------------> */
+
+/* Title */
+
+@font-face {
+  font-family: "Bricolage_Grotesque";
+  src: url("assets/fonts/Bricolage_Grotesque.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Text */
+
+@font-face {
+  font-family: "Product_Sans";
+  src: url("assets/fonts/Product_Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* <----------------------------------------------> General page settings <----------------------------------------------> */
 
 * {
@@ -75,12 +95,11 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   color: var(--gray-dark);
   background-color: var(--gray--light);
 }
 
-/* Font size */
+/* Font settings */
 
 h1,
 h2,
@@ -88,6 +107,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Product_Sans", sans-serif;
   color: var(--gray-dark);
   font-weight: bold;
   line-height: 1.2;
@@ -96,6 +116,7 @@ h6 {
 /* Large title */
 
 h1 {
+  font-family: "Bricolage_Grotesque", sans-serif;
   font-size: clamp(50px, 5vw, 70px);
   letter-spacing: -0.3px;
 }
@@ -103,6 +124,7 @@ h1 {
 /* Normal title */
 
 h2 {
+  font-family: "Bricolage_Grotesque", sans-serif;
   font-size: clamp(32px, 4vw, 40px);
   letter-spacing: -0.2px;
 }
@@ -118,7 +140,22 @@ h3 {
 
 p,
 span {
+  font-family: "Product_Sans", sans-serif;
   color: var(--gray-dark);
+}
+
+th,
+td {
+  font-family: "Product_Sans", sans-serif;
+}
+
+h1 > span,
+a {
+  font-family: "Bricolage_Grotesque", sans-serif;
+}
+
+footer a {
+  font-family: "Product_Sans", sans-serif;
 }
 
 /* Container of each section */
