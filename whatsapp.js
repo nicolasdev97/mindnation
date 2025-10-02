@@ -23,65 +23,65 @@ document
 
 /* <----------------------------------------------> Page language <----------------------------------------------> */
 
-document.addEventListener("DOMContentLoaded", function () {
-  const select = document.querySelector(".language-btn-custom");
-  const selected = select.querySelector(".language-btn-selected");
-  const options = select.querySelector(".language-btn-options");
-  let currentLang = "es";
+// document.addEventListener("DOMContentLoaded", function () {
+//   const select = document.querySelector(".language-btn-custom");
+//   const selected = select.querySelector(".language-btn-selected");
+//   const options = select.querySelector(".language-btn-options");
+//   let currentLang = "es";
 
-  function switchLanguage(lang) {
-    currentLang = lang;
+//   function switchLanguage(lang) {
+//     currentLang = lang;
 
-    document.querySelectorAll("[data-en][data-es]").forEach((el) => {
-      el.innerHTML = el.getAttribute(`data-${lang}`);
-    });
+//     document.querySelectorAll("[data-en][data-es]").forEach((el) => {
+//       el.innerHTML = el.getAttribute(`data-${lang}`);
+//     });
 
-    document
-      .querySelectorAll("[data-en-aria-label][data-es-aria-label]")
-      .forEach((el) => {
-        el.setAttribute(
-          "aria-label",
-          el.getAttribute(`data-${lang}-aria-label`)
-        );
-      });
+//     document
+//       .querySelectorAll("[data-en-aria-label][data-es-aria-label]")
+//       .forEach((el) => {
+//         el.setAttribute(
+//           "aria-label",
+//           el.getAttribute(`data-${lang}-aria-label`)
+//         );
+//       });
 
-    localStorage.setItem("preferredLanguage", lang);
-  }
+//     localStorage.setItem("preferredLanguage", lang);
+//   }
 
-  selected.addEventListener("click", () => {
-    options.style.display = options.style.display === "flex" ? "none" : "flex";
-  });
+//   selected.addEventListener("click", () => {
+//     options.style.display = options.style.display === "flex" ? "none" : "flex";
+//   });
 
-  options.querySelectorAll("li").forEach((option) => {
-    option.addEventListener("click", () => {
-      const lang = option.getAttribute("data-lang");
+//   options.querySelectorAll("li").forEach((option) => {
+//     option.addEventListener("click", () => {
+//       const lang = option.getAttribute("data-lang");
 
-      selected.querySelector("img").src = option.querySelector("img").src;
-      selected.querySelector("span").textContent = option.textContent.trim();
+//       selected.querySelector("img").src = option.querySelector("img").src;
+//       selected.querySelector("span").textContent = option.textContent.trim();
 
-      switchLanguage(lang);
+//       switchLanguage(lang);
 
-      options.style.display = "none";
-    });
-  });
+//       options.style.display = "none";
+//     });
+//   });
 
-  document.addEventListener("click", (e) => {
-    if (!select.contains(e.target)) {
-      options.style.display = "none";
-    }
-  });
+//   document.addEventListener("click", (e) => {
+//     if (!select.contains(e.target)) {
+//       options.style.display = "none";
+//     }
+//   });
 
-  const savedLang = localStorage.getItem("preferredLanguage") || "es";
-  const defaultOption = options.querySelector(`[data-lang="${savedLang}"]`);
+//   const savedLang = localStorage.getItem("preferredLanguage") || "es";
+//   const defaultOption = options.querySelector(`[data-lang="${savedLang}"]`);
 
-  if (defaultOption) {
-    selected.querySelector("img").src = defaultOption.querySelector("img").src;
-    selected.querySelector("span").textContent =
-      defaultOption.textContent.trim();
+//   if (defaultOption) {
+//     selected.querySelector("img").src = defaultOption.querySelector("img").src;
+//     selected.querySelector("span").textContent =
+//       defaultOption.textContent.trim();
 
-    switchLanguage(savedLang);
-  }
-});
+//     switchLanguage(savedLang);
+//   }
+// });
 
 /* <----------------------------------------------> Open or close the mobile menu by clicking the menu button <----------------------------------------------> */
 
@@ -112,7 +112,7 @@ window.addEventListener("scroll", () => {
 const backToTop = document.createElement("button");
 backToTop.className = "back-to-top";
 backToTop.innerHTML =
-  '<i class="fas fa-arrow-up"></i><span class="back-to-top-tooltip" data-en="Back to top" data-es="Volver arriba">Volver arriba</span>';
+  '<i class="fas fa-arrow-up"></i><span class="back-to-top-tooltip" data-en="Back to top" data-es="Volver arriba">Back to top</span>';
 document.body.appendChild(backToTop);
 
 window.addEventListener("scroll", () => {
@@ -135,13 +135,13 @@ backToTop.addEventListener("click", () => {
 const whatsAppMessage = document.createElement("button");
 whatsAppMessage.className = "whatsapp-message";
 whatsAppMessage.innerHTML =
-  '<i class="fa-brands fa-whatsapp"></i><span class="whatsapp-tooltip" data-en="Chat with us on WhatsApp" data-es="Chatea con nosotros por WhatsApp">Chatea con nosotros por WhatsApp</span>';
+  '<i class="fa-brands fa-whatsapp"></i><span class="whatsapp-tooltip" data-en="Chat with us on WhatsApp" data-es="Chatea con nosotros por WhatsApp">Chat with us on WhatsApp</span>';
 document.body.appendChild(whatsAppMessage);
 
 whatsAppMessage.addEventListener("click", () => {
   const phone = "573246139623";
   const message =
-    "Buenos días, estoy interesado en conocer más sobre sus servicios.";
+    "Hello Mindnation! I am interested in learning more about your services.";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 });
