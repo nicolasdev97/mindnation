@@ -139,7 +139,7 @@ whatsAppMessage.innerHTML =
 document.body.appendChild(whatsAppMessage);
 
 whatsAppMessage.addEventListener("click", () => {
-  const phone = "573114928630";
+  const phone = "573246139623";
   const message =
     "Buenos días, estoy interesado en conocer más sobre sus servicios.";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MV3S6FQZ');</script>
-  <!-- End Google Tag Manager -->
-
-
     <!-- clarity -->
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -20,6 +10,23 @@
       })(window, document, "clarity", "script", "s9r1ri5q5x");
   </script>
 
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="UwYGz83nqo2XXGYFxmStLg" async></script>
+
+  <script>
+    var ahrefs_analytics_script = document.createElement('script');
+    ahrefs_analytics_script.async = true;
+    ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+    ahrefs_analytics_script.setAttribute('data-key', 'UwYGz83nqo2XXGYFxmStLg');
+    document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
+  </script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5ZC5Z8NXN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -27,7 +34,7 @@
       content="MindNation - Digital mental health platform for modern workplaces. Get 24/7 access to mental health professionals and resources."
     />
     <meta name="theme-color" content="#00b1a3" />
-    <title>MindNation - Plataforma de bienestar y salud mental</title>
+    <title>MindNation - Digital Mental Health Platform</title>
 
     <!-- Performance optimization -->
 
@@ -60,13 +67,21 @@
     <!-- Styles -->
 
     <link rel="stylesheet" href="styles.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1023897194">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1023897194');
+</script>
 
   </head>
   <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV3S6FQZ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google tag (gtag.js) -->
+
     <!-- Navbar -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="section-container nav-container">
@@ -109,8 +124,8 @@
             href="https://wa.me/+573246139623"
             class="cta-btn"
             data-en="SCHEDULE DEMO"
-            data-es="Agenda tu demo hoy"
-            >Agenda tu demo hoy</a
+            data-es="AGENDAR DEMO"
+            >AGENDAR DEMO</a
           >
         </div>
 
@@ -132,14 +147,14 @@
       <div class="section-container hero-container">
         
         <!-- Small top text of the hero section -->
-        <p data-en="Trusted by 500+ Companies" data-es="Más de 500 empresas ya confiaron en MindNation para cuidar a su gente.">
+        <p data-en="Trusted by 500+ Companies" data-es="Utilizado por más de 500 empresas">
           Utilizado por más de 500 empresas
         </p>
 
         <!-- Main heading of the hero section -->
         <h1
           data-en="Transform Your Workplace with <span>MENTAL HEALTH SUPPORT</span>"
-          data-es="Convierte tu empresa en un espacio donde las personas prosperan, <span>no solo trabajan.</span>"
+          data-es="Transforma tu Lugar de Trabajo con <span>APOYO EN SALUD MENTAL</span>"
         >
           Transforma tu Lugar de Trabajo con
           <span>APOYO EN SALUD MENTAL</span>
@@ -154,18 +169,17 @@
             <!-- Subheading of the hero section -->
             <h3
               data-en="<span>Empower</span> your team with 24/7 access to mental health professionals."
-              data-es="<span>Multiplica el rendimiento de tu equipo</span> con apoyo emocional experto, disponible 24/7.
-Porque un equipo bien cuidado, rinde mejor."
+              data-es="<span>Potencia</span> a tu equipo con acceso 24/7 a profesionales de salud mental."
             >
               <span>Potencia</span> a tu equipo con acceso 24/7 a profesionales de salud mental.
             </h3>
 
             <!-- Hero call-to-action button -->
             <a
-              href="https://wa.me/+573246139623"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeUEfzvDczGHN4b_ifnU3UoRTxZAU2bPtI08LDYUS9oGPMLUQ/viewform?usp=header"
               class="cta-btn cta-btn-big"
               data-en="SCHEDULE A FREE DEMO"
-              data-es="Habla con un experto"
+              data-es="AGENDAR DEMO GRATIS"
             >
               AGENDAR DEMO GRATIS
             </a>
@@ -263,10 +277,7 @@ Porque un equipo bien cuidado, rinde mejor."
                   
                   <!-- Slide description -->
                   <p data-en="Personalized emotional support, prompt attention, and effective therapy for your team's mental well-being."
-                    data-es="Plan de bienestar en 8 pasos estratégicos
-Apoyo emocional inmediato, confidencial y disponible 24/7.
-
-Activa hoy mismo el cuidado integral de tu equipo.">
+                    data-es="Apoyo emocional personalizado, atención rápida y terapia eficaz para el bienestar mental de tu equipo.">
                     Apoyo emocional personalizado, atención rápida y terapia eficaz para el bienestar mental de tu equipo.
                   </p>
                   <br />
@@ -290,16 +301,16 @@ Activa hoy mismo el cuidado integral de tu equipo.">
                 </div>
                 <div class="showcase-slide-info">
                   <h3 data-en="More than therapy: a comprehensive platform for your well-being"
-                      data-es="Mucho más que terapia: la solución 360° para el bienestar de tu equipo.">
+                      data-es="Más que terapia: una plataforma integral para tu bienestar">
                     Más que terapia: una plataforma integral para tu bienestar
                   </h3>
                   <p data-en="Surveys, fitness programs, organizational culture, 24/7 access, and expert sessions."
-                    data-es="Diagnóstico en tiempo real, programas de fitness, cultura organizacional, apoyo 24/7 y sesiones con expertos.">
+                    data-es="Encuestas, programas de fitness, cultura organizacional, acceso 24/7 y sesiones con expertos.">
                     Encuestas, programas de fitness, cultura organizacional, acceso 24/7 y sesiones con expertos.
                   </p>
                   <br />
                   <p data-en="Activate well-being in your organization today."
-                    data-es="Transforma hoy tu organización en un entorno donde las personas prosperan.">
+                    data-es="Activa el bienestar en tu organización hoy.">
                     Activa el bienestar en tu organización hoy.
                   </p>
                 </div>
@@ -321,10 +332,7 @@ Activa hoy mismo el cuidado integral de tu equipo.">
                     ¿Sabías que…?
                   </h3>
                   <p data-en="40% of employees face mental health issues, and 73% lose productivity because of them."
-                    data-es="4 de cada 10 empleados enfrentan desafíos emocionales. 7 de cada 10 están rindiendo por debajo de su potencial.
-No es una estadística. Es una señal de alerta.
-
-Da el primer paso hoy y protege el activo más valioso de tu empresa: su gente.">
+                    data-es="El 40% de los colaboradores enfrenta problemas de salud mental y el 73% pierde productividad por ello.">
                     El 40% de los colaboradores enfrenta problemas de salud mental y el 73% pierde productividad por ello.
                   </p>
                   <br />
@@ -622,7 +630,7 @@ Da el primer paso hoy y protege el activo más valioso de tu empresa: su gente."
         </p>
         <!-- CTA button in the CTA section -->
         <a
-          href="https://wa.me/+573246139623"
+          href="https://docs.google.com/forms/d/1K9X7QlGKI2Sav66bHHPdKCzc6wthsm7sdWZkbTBfkL8/"
           class="cta-btn cta-btn-midle"
           data-en="GET STARTED NOW"
           data-es="COMIENZA AHORA"
@@ -721,7 +729,7 @@ Da el primer paso hoy y protege el activo más valioso de tu empresa: su gente."
         <!-- CTA section -->
         <div>
           <a
-            href="https://wa.me/+573246139623"
+            href="https://docs.google.com/forms/d/1K9X7QlGKI2Sav66bHHPdKCzc6wthsm7sdWZkbTBfkL8/"
             class="cta-btn cta-btn-midle"
             data-en="TALK TO AN EXPERT"
             data-es="HABLA CON UN EXPERTO"
@@ -973,12 +981,12 @@ Da el primer paso hoy y protege el activo más valioso de tu empresa: su gente."
 
         <!-- CTA button for final section -->
         <a
-          href="https://wa.me/+573246139623"
+          href="https://docs.google.com/forms/d/1K9X7QlGKI2Sav66bHHPdKCzc6wthsm7sdWZkbTBfkL8/"
           class="cta-btn cta-btn-big"
           data-en="SCHEDULE A DEMO"
           data-es="AGENDAR UNA DEMO"
         >
-        Descubre cómo mejorar el bienestar de tu equipo. Agenda tu demo hoy mismo.
+          AGENDAR UNA DEMO
         </a>
 
         <!-- Text under CTA button -->
